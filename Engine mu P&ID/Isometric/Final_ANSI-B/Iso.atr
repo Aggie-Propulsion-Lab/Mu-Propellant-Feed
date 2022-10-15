@@ -1,0 +1,15 @@
+﻿ATTRIBUTES
+Attribute1 General.Project_Name
+Attribute2 General.Project_Description
+Attribute3 P3dLineGroup.Tag
+Attribute4 General.Project_Number
+Attribute5 Drawing.Unit
+Attribute6 P3dLineGroup.InsulationThickness
+Attribute7 P3dLineGroup.InsulationSpec
+Attribute8 P3dLineGroup.Service
+Attribute9 P3dLineGroup.NominalSpec
+
+BOM-ATTRIBUTES
+EngineeringItems.Schedule
+EngineeringItems.PressureClass
+EngineeringItems.Material

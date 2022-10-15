@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<PlantOrthoBOMConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OrthoConfigDefinition Version="2" Name="Default">
+  <!-- Output drawing configuration -->
+  <!-- 'ForceUpcase': 'true' or 'false' -->
+  <!--     'true' = convert Annotation and Table text to uppercase -->
+  <!--     'false' = do not change case -->
+  <Output Overwrite="true" ForceUpcase="true" />
+  <!-- Data (solver) configuration -->
+  <!-- 'SizeDelimiter': A delimiter that separates size values.  For example, 'X' in 4" X 6" for a reducer. -->
+  <Data SizeDelimiter="X">
+    <!-- Aggregated lists -->
+    <!-- The aggregated lists (e.g. BOM, weld list, cut piece list) that need to be generated -->
+    <!-- in an isometric model are defined in this section. -->
+    <AggregatedLists>
+      <!-- Aggregated list configration -->
+      <!-- 'xsi:type': Can be 'IsoCompositeDataListConfig' or 'IsoGeneralDataListConfig' -->
+      <!--     An 'IsoCompositeDataListConfig' configuration is used to define a list that is a -->
+      <!--     roll-up of multiple 'IsoGeneralDataListConfig' lists. This allows for a second -->
+      <!--     level of grouping to be defined within a list. -->
+      <!--     An 'IsoGeneralDataListConfig' defines an aggregated list that only support a single -->
+      <!--     level of grouping. -->
+      <!-- 'Name': (string) -->
+      <!--     This name is referenced by the <DataLinks> section of the <Table> configuration. -->
+      <AggregatedList xsi:type="IsoCompositeDataListConfig" Name="Materials">
+        <Index Name="PartNumber" Format="" Characters="" ModelSpecified="false" ContinuousIndexing="false" />
+        <!-- List of 'IsoGeneralDataListConfig' configurations -->
+        <Groups>
+          <!-- 'UseAlternateUnitsStyle': 'true' or 'false' -->
+          <!--    Designates if the alternate units should style be used to format (pipe length) -->
+          <!--    measurements in this data list. -->
+          <Group Name="PIPE" UseAlternateUnitsStyle="true">
+            <!-- List of 'Label' configurations -->
+            <Labels>
+              <!-- 'Label': (string) -->
+              <!--    The label of the group. Used only in table templates. -->
+              <Label Name="pipe" />
+            </Labels>
+            <!-- List of columns to group rows by -->
+            <Columns>
+              <!-- 'name': (string); Column name -->
+              <Column Name="Category" />
+              <Column Name="Code" />
+              <Column Name="Description" />
+            </Columns>
+            <!-- Specifies the sort columns and sort order -->
+            <!-- 'SortBy': (string); Contains the column name followed by a space and 'ASC' (ascending) or 'DESC' (descending). -->
+            <!-- Columns are sorted ascending by default. Multiple columns can be separated by commas. -->
+            <Sort SortBy="Type ASC,ConnectionSize ASC" />
+          </Group>
+          <Group Name="FITTINGS">
+            <Labels>
+              <Label Name="fittings" />
+            </Labels>
+            <Columns>
+              <Column Name="Category" />
+              <Column Name="Code" />
+            </Columns>
+            <Sort SortBy="Type ASC,ConnectionSize ASC" />
+          </Group>
+          <Group Name="OLETS">
+            <Labels>
+              <Label Name="olets" />
+            </Labels>
+            <Columns>
+              <Column Name="Category" />
+              <Column Name="Code" />
+            </Columns>
+            <Sort SortBy="Type ASC,ConnectionSize ASC" />
+          </Group>
+          <Group Name="FLANGES">
+            <Labels>
+              <Label Name="flanges" />
+            </Labels>
+            <Columns>
+              <Column Name="Category" />
+              <Column Name="Code" />
+            </Columns>
+            <Sort SortBy="Type ASC,ConnectionSize ASC" />
+          </Group>
+          <Group Name="FASTENERS">
+            <Labels>
+              <Label Name="fasteners" />
+            </Labels>
+            <Columns>
+              <Column Name="Category" />
+              <Column Name="Code" />
+              <Column Name="Size" />
+            </Columns>
+            <Sort SortBy="Type ASC,ConnectionSize ASC" />
+          </Group>
+          <Group Name="VALVES">
+            <Labels>
+              <Label Name="valves" />
+            </Labels>
+            <Columns>
+              <Column Name="Category" />
+              <Column Name="Code" />
+            </Columns>
+            <Sort SortBy="Type ASC,ConnectionSize ASC" />
+          </Group>
+          <Group Name="PIPE SUPPORTS">
+            <Labels>
+              <Label Name="pipe supports" />
+            </Labels>
+            <Columns>
+              <Column Name="Category" />
+              <Column Name="Code" />
+            </Columns>
+            <Sort SortBy="Type ASC,ConnectionSize ASC" />
+          </Group>
+        </Groups>
+      </AggregatedList>
+    </AggregatedLists>
+  </Data>
+  <!-- Table configuration -->
+  <!-- 'AllowOverflow': 'true' or 'false' -->
+  <Table AllowOverflow="false">
+    <!-- Allow User to define more table styles -->
+    <TableLayouts>
+      <!-- Table layout -->
+      <!-- 'StyleName': (string); The table style name. -->
+      <TableLayout Name="Default" StyleName="AdskIso">
+        <RowStyles>
+          <!-- Binds row/cell style with row type -->
+          <RowStyle RowType="Title" StyleName="Title" />
+          <RowStyle RowType="Header" StyleName="Header" />
+          <RowStyle RowType="GroupTitle" StyleName="GroupTitle" />
+          <RowStyle RowType="Data" StyleName="Data" />
+          <RowStyle RowType="Blank" StyleName="Blank" />
+        </RowStyles>
+      </TableLayout>
+    </TableLayouts>
+    <!-- Table types that are shown in the table area of the drawing -->
+    <TableTypes>
+      <!-- The single table type to be shown -->
+      <!-- 'TableSectionType': The table section type. Can be 'All', 'ShopItems' or 'FieldItems'. -->
+      <!-- 'Name': (string); The name of the table. -->
+      <!-- 'SchemeName': (string); The name of the table scheme this table is using. -->
+      <!-- 'Title': (string); The title display name. -->
+      <!-- 'Enabled': 'true' or 'false'; If 'true' the table is shown. If 'false' the table is hidden. -->
+      <TableType Name="AllMaterials" TableSectionType="All" SchemeName="BOM" Title="BILL OF MATERIALS" Enabled="true" />
+    </TableTypes>
+    <!-- List of table schemes -->
+    <TableSchemes>
+      <!-- Table scheme -->
+      <!-- 'TableType': Defines the name of the table scheme. It will be used in <DataLinks> section as well. -->
+      <!-- 'Title': is what to be shown in the first row of the table. -->
+      <!-- 'TemplateName': (string); The name of the template to be used for this table. -->
+      <!-- 'TableLayoutName': The name of the layout that will be used for this table.-->
+      <!-- 'TitleVisible': 'true' or 'false'; If 'true' show the title. -->
+      <!-- 'HeaderVisible': 'true' or 'false'; If 'true' show the header columns. -->
+      <!-- 'InternalSpacing': The spaces between two tables of the same table type. i.e. Fabrication/Erection Items tables -->
+      <!-- 'Spacing': Controls the spaces between two consecutive tables. -->
+      <TableScheme TableType="BOM" Name="BOM" TemplateName="Simple" TableLayoutName="Default" TitleVisible="true" HeaderVisible="true" InternalSpacing="0.3937">
+        <!-- Grouping controls how the grouped component table behaves -->
+        <!-- Used when 'LayoutOption' is not 'General'. -->
+        <!-- 'BlankRowsBetweenGroups': Defines how many blank rows are between two group/sub tables. -->
+        <!-- 'BlankRowsBeforeFirstGroup': Defines how many blank rows are before the first group/sub table. -->
+        <!-- 'RowType': Defines the row type of the blank row so it may appear differently with different settings. -->
+        <Grouping BlankRowsBetweenGroups="0" BlankRowsBeforeFirstGroup="0" RowType="Blank" />
+        <!-- List of column header names and their corresponding labels -->
+        <ColumnMappings>
+          <!-- 'HeaderName': (string) -->
+          <!--     The column name in the source data list defined in the 'Data' section. -->
+          <!-- 'HeaderRefName': (string) -->
+          <!--     The reference for the header name. i.e. the reference for 'PressureClass' could be 'EngineeringItems.PressureClass'. -->
+          <!-- 'Label': (string) -->
+          <!--     The label that will appear in the template in DWT. -->
+          <ColumnMapping HeaderName="PartNumber" Label="ID" />
+          <ColumnMapping HeaderName="Quantity" Label="QTY" />
+          <ColumnMapping HeaderName="Size" Label="ND" />
+          <ColumnMapping HeaderName="SCHClass" Label="SCH/CLASS" />
+          <ColumnMapping HeaderName="Description" Label="DESCRIPTION" />
+        </ColumnMappings>
+        <!-- A list of templates -->
+        <Templates>
+          <!-- Specifies a table template -->
+          <!-- 'Name': (string); The name of the template.-->
+          <!-- 'LayoutOption': (string); Can be 'Simple', 'SemiComplex' or 'Complex'. -->
+          <!--    Simple - A simple layout without grouping. -->
+          <!--    SemiComplex - Components are grouped based on component type but all sub tables share the same header. -->
+          <!--    Complex - Components are grouped based on component type but each sub table can have its individual column settings. -->
+          <Template Name="Simple" LayoutOption="Simple">
+            <!-- Column schemes -->
+            <ColumnSchemes>
+              <!-- Defines the column settings -->
+              <!-- 'Default': 'true' or 'false'; If 'true' the column scheme is the default scheme. -->
+              <ColumnScheme Default="true">
+                <!-- Groups (String collection) - Which groups is this column scheme applied to -->
+                <Groups />
+                <!-- Columns specifies the list of 'Column' definitions in a table -->
+                <Columns>
+                  <!-- Column definition -->
+                  <!-- 'Name': (string); The column identifier. This is used by the program to identify a column. -->
+                  <!-- 'RelativeWidth': (double) -->
+                  <!--     The column width = TableWidth * (ColumnRelativeWidth / TotalColumnRelateWidths). -->
+                  <!-- 'Label': (string) -->
+                  <!--     The label that will appear in the template in DWT. -->
+                  <!-- 'StyleName': (string) - optional -->
+                  <!--     The name of the AutoCAD Cell Style to apply to the (data) cells in the column. -->
+                  <!-- 'HeaderDisplayName': string - optional -->
+                  <!--     The display name of the table column in the output isometric drawing. -->
+                  <!-- 'Alignment': (CellAlignment) - optional -->
+                  <!--     The column alignment. Default to MiddleCenter. -->
+                  <Column RelativeWidth="0.7407407407407407" Label="ID" HeaderDisplayName="ID" />
+                  <Column RelativeWidth="1.1111111111111112" Label="QTY" HeaderDisplayName="QTY" />
+                  <Column RelativeWidth="0.7407407407407407" Label="ND" HeaderDisplayName="ND" />
+                  <Column RelativeWidth="3.333333333333333" Label="SCH/CLASS" HeaderDisplayName="SCH/CLASS" />
+                  <Column RelativeWidth="4.0740740740740735" Label="DESCRIPTION" HeaderDisplayName="DESCRIPTION" Alignment="MiddleLeft" />
+                </Columns>
+              </ColumnScheme>
+            </ColumnSchemes>
+          </Template>
+          <Template Name="SemiComplex" LayoutOption="SemiComplex">
+            <ColumnSchemes>
+              <ColumnScheme Default="true">
+                <Groups />
+                <Columns>
+                  <Column RelativeWidth="0.7407407407407407" Label="ID" HeaderDisplayName="ID" />
+                  <Column RelativeWidth="1.1111111111111112" Label="QTY" HeaderDisplayName="QTY" />
+                  <Column RelativeWidth="0.7407407407407407" Label="ND" HeaderDisplayName="ND" />
+                  <Column RelativeWidth="3.333333333333333" Label="SCH/CLASS" HeaderDisplayName="SCH/CLASS" />
+                  <Column RelativeWidth="4.0740740740740735" Label="DESCRIPTION" HeaderDisplayName="DESCRIPTION" Alignment="MiddleLeft" />
+                </Columns>
+              </ColumnScheme>
+            </ColumnSchemes>
+          </Template>
+          <Template Name="Complex" LayoutOption="Complex">
+            <ColumnSchemes>
+              <ColumnScheme Default="true">
+                <Groups />
+                <Columns>
+                  <Column RelativeWidth="1.1111111111111112" Label="ID" HeaderDisplayName="ID" />
+                  <Column RelativeWidth="1.6666666666666665" Label="QTY" HeaderDisplayName="QTY" />
+                  <Column RelativeWidth="1.1111111111111112" Label="ND" HeaderDisplayName="ND" />
+                  <Column RelativeWidth="6.1111111111111116" Label="DESCRIPTION" HeaderDisplayName="DESCRIPTION" Alignment="MiddleLeft" />
+                </Columns>
+              </ColumnScheme>
+              <ColumnScheme Default="false">
+                <Groups>
+                  <!-- 'Name': (string); The name of the group that the column scheme will apply to. -->
+                  <Group Name="Pipe" />
+                </Groups>
+                <Columns>
+                  <Column RelativeWidth="1.1111111111111112" Label="ID" HeaderDisplayName="ID" />
+                  <Column RelativeWidth="1.6666666666666665" Label="QTY" HeaderDisplayName="QTY" />
+                  <Column RelativeWidth="1.1111111111111112" Label="ND" HeaderDisplayName="ND" />
+                  <Column RelativeWidth="6.1111111111111116" Label="DESCRIPTION" HeaderDisplayName="DESCRIPTION" Alignment="MiddleLeft" />
+                </Columns>
+              </ColumnScheme>
+            </ColumnSchemes>
+          </Template>
+        </Templates>
+        <!-- Export to file -->
+        <!-- 'Export': 'true' or 'false'; If 'true' export table to a file, but subject to the visibility of the table. -->
+        <!-- 'ExportFileType': Defines the file type to be exported. Can be 'TXT', 'CSV', 'XLS' or 'XLSX'. -->
+        <ExportToFile Export="false" ExportFileType="CSV" ForceExportOnEmptyData="false">
+          <ExportFileNaming Prefix="" Suffix="-BOM" />
+        </ExportToFile>
+      </TableScheme>
+    </TableSchemes>
+    <!-- Data links -->
+    <!-- The link between table and data (generated from Data Solver) -->
+    <!-- TableName: (string); The name of the table (type). -->
+    <!-- DataListName: (string); The name of the data list. -->
+    <DataLinks>
+      <DataLink TableName="AllMaterials" DataListName="Materials" />
+    </DataLinks>
+    <!-- Overflow sheet label configuration -->
+    <!-- Defines the naming of overflow sheets. -->
+    <!-- 'AutoLabelOption': Can be 'Number' or 'Alphabet'. -->
+    <OverflowSheetLabelConfig Prefix="" Suffix="" AutoLabelOption="Number" Separator="-overflow-" NumberOfDigits="1" StartFrom="1" />
+  </Table>
+  <!-- Theme list -->
+  <!-- A theme is a named configuration for Dimensions, Annotations, BendElbow, Symbols, and Insulation. -->
+  <!-- A Non-default theme is selected based on its 'Filter'. -->
+  <Themes>
+    <!-- Existing Piping theme -->
+    <Theme Name="Existing Piping" Enabled="true" Filter="Existing" Reporting="false">
+    </Theme>
+  </Themes>
+  </OrthoConfigDefinition>
+  <OrthoClientDefinition>
+    <UseFourDigitYearFormat>false</UseFourDigitYearFormat>
+    <DisplaySupport>true</DisplaySupport>
+    <DateFormat>eAmericanFormat</DateFormat>
+    <IsoPath name="LDSFILE" />
+    <IsoLDTable use="false" />
+    <IsoLDS use="false" />
+    <IsoCutbackElbows UseSeparateLine="false" Format="None" />
+    <IsoBOMColumns UseSingleSCHColumn="true" />
+    <IsoBOMDescriptions DescriptionType="Family" />
+  </OrthoClientDefinition>
+  <OrthoTableGroupBy>eGroupByDefault</OrthoTableGroupBy>
+</PlantOrthoBOMConfig>

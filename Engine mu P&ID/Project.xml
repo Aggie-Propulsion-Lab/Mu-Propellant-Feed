@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ProjectName>Engine mu P&amp;ID</ProjectName>
+  <ProjectDescription>versino 1</ProjectDescription>
+  <ProjectVersion>92</ProjectVersion>
+  <ProjectVersionMinor>1</ProjectVersionMinor>
+  <ProjectParts>
+    <ProjectPart name="PnId" fileName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\PnIdPart.xml" relativeFileName="PnIdPart.xml" uncFileName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\PnIdPart.xml" />
+    <ProjectPart name="Piping" fileName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\PipingPart.xml" relativeFileName="PipingPart.xml" uncFileName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\PipingPart.xml" />
+    <ProjectPart name="Iso" fileName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\IsoPart.xml" relativeFileName="IsoPart.xml" uncFileName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\IsoPart.xml" />
+    <ProjectPart name="Ortho" fileName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\OrthoPart.xml" relativeFileName="OrthoPart.xml" uncFileName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\OrthoPart.xml" />
+    <ProjectPart name="Misc" fileName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\MiscPart.xml" relativeFileName="MiscPart.xml" uncFileName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\MiscPart.xml" />
+  </ProjectParts>
+  <ProjectPartDirectories>
+    <ProjectPartDirectory name="SpecSheets" directoryName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Spec Sheets" relativeDirectoryName="Spec Sheets" uncDirectoryName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Spec Sheets" />
+    <ProjectPartDirectory name="Ortho" directoryName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Orthos\DWGs" relativeDirectoryName="Orthos\DWGs" uncDirectoryName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Orthos\DWGs" />
+    <ProjectPartDirectory name="Related Files" directoryName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Related Files" relativeDirectoryName="Related Files" uncDirectoryName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Related Files" />
+  </ProjectPartDirectories>
+</Project>
