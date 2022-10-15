@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ProjectName>Engine mu P&amp;ID</ProjectName>
+  <ProjectDescription>versino 1</ProjectDescription>
+  <GeneralSettings workHistory="eNoAutoPrompt" annotationOffsetDistance="1" />
+  <ProjectDirectories>
+    <SymbolsDirectory directoryName="" relativeDirectoryName="" uncDirectoryName="" />
+    <ProjectDirectory directoryName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID" relativeDirectoryName="." uncDirectoryName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID" />
+    <ProjectDwgDirectory directoryName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Related Files" relativeDirectoryName="Related Files" uncDirectoryName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Related Files" />
+  </ProjectDirectories>
+  <ProjectFiles>
+    <ProjectDwtTemplateFile fileName="PID ANSI D -Color Dependent Plot Styles.dwt" relativeFileName="PID ANSI D -Color Dependent Plot Styles.dwt" uncFileName="" />
+    <DataCacheFile fileName="C:\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Misc.dcf" relativeFileName="Misc.dcf" uncFileName="\\LAPTOP-R2V7RB58\Users\aliga\Desktop\engineering\APL\Engine mu P&amp;ID\Misc.dcf" />
+  </ProjectFiles>
+  <ProjectVersion>1</ProjectVersion>
+  <DrawingHistoryStatus>
+    <StatusItem>&lt;Unassigned&gt;</StatusItem>
+    <StatusItem>In progress</StatusItem>
+    <StatusItem>For review</StatusItem>
+    <StatusItem>Revision 1</StatusItem>
+    <StatusItem>Revision 2</StatusItem>
+    <StatusItem>Revision 3</StatusItem>
+    <StatusItem>Revision 4</StatusItem>
+    <StatusItem>Final</StatusItem>
+    <StatusItem>Archive</StatusItem>
+  </DrawingHistoryStatus>
+  <PnPDrawingFiles />
+  <ProjectRules>
+    <ArrayOfPnPRule xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />
+  </ProjectRules>
+  <ProjectTriggers />
+  <ProjectDataViews />
+</Project>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PnPQueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GroupBy>
+     <string>PnPID</string> 
+  </GroupBy>
+  <OrderBy>
+    <PnPSortItem>
+      <SortDirection>Ascending</SortDirection>
+      <SortColumn>LineNumber</SortColumn>
+    </PnPSortItem>
+  </OrderBy>
+  <QuerySpecification xsi:type="PnPEqualJoinQuerySpecification">
+    <RightQuerySpecification xsi:type="PnPEqualJoinQuerySpecification">
+      <RightQuerySpecification xsi:type="PnPTableQuerySpecification">
+        <Filter />
+        <TableName>PnPDrawings</TableName>
+      </RightQuerySpecification>
+      <LeftQuerySpecification xsi:type="PnPTableQuerySpecification">
+        <Filter />
+        <TableName>PnPDataLinks</TableName>
+      </LeftQuerySpecification>
+      <RightJoinColumns>
+        <string>PnPID</string>
+      </RightJoinColumns>
+      <LeftJoinColumns>
+        <string>DwgId</string>
+      </LeftJoinColumns>
+      <JoinOperation>LeftOuter</JoinOperation>
+    </RightQuerySpecification>
+    <LeftQuerySpecification xsi:type="PnPRelationshipQuerySpecification">
+	  <LeftQuerySpecification xsi:type="PnPTableQuerySpecification">
+        <Filter />
+        <TableName>PipeLineGroup</TableName>
+      </LeftQuerySpecification>
+	 <RightQuerySpecification xsi:type="PnPTableQuerySpecification">
+        <Filter />
+        <TableName>PipeLines</TableName>
+      </RightQuerySpecification>
+      <LeftRole>PipeLineGroup</LeftRole>
+      <RightRole>PipeLine</RightRole>
+      <RelationshipTypes>
+        <string>PipeLineGroupRelationship</string>
+      </RelationshipTypes>
+    </LeftQuerySpecification>
+    <RightJoinColumns>
+      <string>RowId</string>
+    </RightJoinColumns>
+    <LeftJoinColumns>
+      <string>PipeLines.PnPID</string>
+    </LeftJoinColumns>
+    <JoinOperation>LeftOuter</JoinOperation>
+  </QuerySpecification>
+  <SelectList>
+    <string>LineNumber</string>
+    <string>PnID</string>
+    <string>Dwg Name</string>  
+    <string>Service</string> 
+    <string>PnPID</string>
+  </SelectList>
+</PnPQueryDefinition>

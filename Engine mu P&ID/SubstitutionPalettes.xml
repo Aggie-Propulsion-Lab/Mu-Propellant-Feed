@@ -1,0 +1,599 @@
+﻿<ProcessPower Version="2.0">
+   <BaseClass name="Blowers">
+      <Class name="CentrifugalBlower" GraphicalStyleName="Centrifugal Blower Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC8SURBVFhH7c7RCsQgDETR/v9Pu52FgAxXjaXVFwunxTFNcpVStsJwJQxH7kevP7+bhWFPPTx4zQwMe3zgWeAscBbYsoDzmhkYZrwxXDDMeGO4YJhxFtACLV7bg2FPZkjUjOoEw5ZMQ4m6TD2GJNXsrgl+14Kho4bZbATDoIYtcR+1dM7AMERDb6xz8Lw+Z2BIRs2fDBcMyfYFpDXk6XDBkMQQfV19PwtDMhrw6QJqnuX/jmC4EoYrYbhOuX6Zrjdk+z/52QAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PositiveDisplacementBlower" GraphicalStyleName="Positive Displacement Blower Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVFhH7c7RqgIxDEXR+f+frkYIhMNuJkHJPNgL61a2xdNrrfUojJMwVrz/7N+HfteB8U4cd3qnCuMdHTwPOA/4zwcovVOFseIX4wZj1bfjBmPVecAjD7DRHb1bgTGzGxp/gJ0u9i6MGR3UswtjRgf17MJIbMDFFj87bxUYif9wHKDPsVVgzOiQnl0YMzqoZxfGTBx0sXdhzOyGRh9A9F4VxowOR3q3AuMkjJMwzlnXC7rTOWL4qGzmAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="BlowerAxial" GraphicalStyleName="Blowers Style" />
+   </BaseClass>
+   <BaseClass name="Compressors">
+      <Class name="CentrifugalCompressor" GraphicalStyleName="Centrifugal Compressor Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVFhHxc5bDoMwDERR9r/ptJHqyh5uXnwMlU4FN07C1Vp7FUYnjE4YnTA6YXTC6ITRCaMTRieMu76//lfoTBitl5dTeODvoix6zGS3cGJ0qOpzWVkrLzKo8mzMa1vRPWVhdiCtzeZHdE9ZmB0Y60rnVnRPWViJ2bxH24ru+T88cfIBfZbmy8up0QfEZZnOBIy79JKgczMYdz29NMPohNEJoxNGJ4xOGJ0wOmF0wuiE0QmjT7s+Mf5lNtlRvMIAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ReciprocatingCompressor" GraphicalStyleName="Reciprocating Compressor Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADISURBVFhHxY4BCsMwDAP7/09nbiGupsmFeEQdHJMvsukxxngVKZ1I6URKJ1I6kdKJlE6kdCLlDuIXf8IruYMtH3AeXeXnBosV1EEF9ngnQwc+VoE93slwDTFWYG9SeQZ7vHOHiPyIqLenPoI93rlDRH5E5nsXvDPzNWegIqPenvoI9ngnwzXEWIG9SeUZ7PFOhg58rAJ7vJOhAx+rwB7vZOhwHuvwdQOHDnxwFSlXeP0D/kVKJ1I6kdKJlE6kdCKlEymdSOljHB/ZcDli1yCl7QAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ScrewCompressor" GraphicalStyleName="Screw Compressor Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACiSURBVFhHxcxRDoMwDMBQ7n/pbp1ICJVbVQh5H08EJ3C01v4KowmjCaMJowmjCaMJowmjCaMJowmj6f7ye70f7Hr67TV8xzfE/3ZdQ/k45trCatfV3udR7PImBzgcW5jtotd9nwO2HM5lNevdalf1u4Ath3Mxe1KL56qNYpc3OQyHT8X/dmE0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGH0tOMDylEjeFeD4RcAAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Conveyors" />
+   <BaseClass name="Crushers" />
+   <BaseClass name="Driers" />
+   <BaseClass name="Filters">
+      <Class name="Filter" GraphicalStyleName="Filter Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVFhHxY7RCgMhDATv/3/a1uCGNWxoobp9GHAm8bxnjPFXZHQioxMZncjoREYnMjqR0YmO7zyp/VfUd/OwxbJYXTW4ap1Hy8MaOsCb8e4mZXiajz8QYS3dZHuPJWNZhKOxM5jVnenc4NFYMjYX0dgZzOrOdG7waCwZm4to7AxmdWc6N3g0lozNRTR2BrO6M50bPBpLxuYiGjuDWd2Zzg0ejSXCWrrJ9l4exPA06o08hKyF22xvsmQUi9x51jm3OtsaS8bmAyf46gecyOhERicyOpHRiYxOZHQioxMZfYznBQsXMF14j8tOAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Furnaces">
+      <Class name="FiredHeater" GraphicalStyleName="Fired Heater Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACsSURBVFhH7c5BCsMwDAXR3P/SbrwQiM9Ykr1QC3XhETKNLT1jjK/C2AljJ4yZ9/c+1u87MGbuAneBu8B/L7AadroExpVsyMkSGMnJ5RUYyVwgY9/ZmQqMxA/w7H9DLYKR6MXzXVm3byowEj8gY2cqMJLqxbtLYCQ7C2iLYCR3gZ9ZoPqswkjmxTrEP73ZqjASHRLRsxGMRIdE9GwEI9EhET0bwdgJYyeMfcbzATY0EYp3eySHAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Furnace" GraphicalStyleName="Furnace Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC2SURBVFhH7Y7RDoQwCAT9/5+uxwOmIVOgPNDE02REp8ruNcY4CspOUGb4XXJ7sOdZUHrMgXZWQBkxB8rz0QL0vgPKCAmcQ48UoFkBZYQN1lkBpYeEzYH2fReUERo6Y7/JgjLCBrYWWIVVS6BcEYVUSqAksst3S6C0yFJdrM+EnsvMgpLILv4KfAX+p8AqaOVXoCSyi1sKeCHeGYGSyC5+fwGaFvFZUBI2xMP+64GyE5SdoOxjXDdlNT1eO9qMMAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="HeatExchangers">
+      <Class name="AirCooledExchanger" GraphicalStyleName="Air Cooled Exchanger Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADYSURBVFhH7Y9bDsMwCARz/0u7cZVt8GriOi/Sj1aaGgYMzlRKeRSUmaDMBGUmKDNBKeZf/ZvDY3E9v4FSaKDwuuP9Fe9xWHYuqxZ7Yhwh57BcBl6J5mqHaJNw4U6anU1ijVcS52vf232C0CR3Fb2Za3DgAaO9vb41+IUH3In2OG2yNMbTqZ7wHp0eO20SLgvV3G9B/dE5KCu6qCHKI1su4nUHpfBhe/F5BMpRRpf0QDmCvvLsI1COoMX/Bzz6AOG1PaAc5ezyCspMUGaCMhOUmaDMBGUeZXoBB3FgLf0nv1oAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="DoublePipeExchanger" GraphicalStyleName="Double Pipe Exchanger Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVFhH5c5BDoMwDERR7n/pFEcaYZyPssAaFq30VPLjBI4xxqcwOmF0wuiE0QmjE0YnjE4YnTCG83f+8V4njCE+oFt9R1iC6IAOZ5rZ7dcu2p8zeTHDw2AHuvO+SAPx3E13Z9fDw8Bbu3uvh7//gLlIw/HcTXdna9gceIPuvC0yDcd/pZndfu2i/TmTF1k91KG+IywhezrUCaMTRieMThidMDphdMLohNEJoxNGn3H8AJrs5afRxM2yAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PlateAndFrameExchanger" GraphicalStyleName="Plate And Frame Exchanger Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEHSURBVFhHxY1BjsMwDMT6/0+ncVElxJguHGChPRDR0NLkdRzHv6KyE5WdqOxEZScuT53kzi/ydpA7hcs4+FVgPLl3KQVPyXtm4nJRQL/rLJN7kKLM9Lsu8/R2DedIytl31/FLhivuAQ/T0veQfteVt/mTGS4pBSTdaqfITFxKAUm32ikyE5dS8JS8ZyYupYCkW+0UmYlLKSDpVjtFZuJSCki61U6RmbiUgqfkPTNxKQUk3WqnyExcSgFJt9opMhOXUkDK5ZcMV2Qm94ClPKhMv+syT2/XcI4Jfc3jy3nlcibDF/eAh2npm+l3XebpjeGSp/5r8h+Fyk5UdqKyE5WdqOxEZR/H6w1RA96g2snF9wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SpiralHeatExchanger" GraphicalStyleName="Spiral Exchanger Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEMSURBVFhHzY4BjsIwDAT5/6d7+NSF1TJOE5ACSIPssdfp7TiOr4JyJyh3gtK5/+rvXvKcWMmgTN75gHQdKJOf+oCqO3xH9RUoEz0wIveUvQJlMnPYd0Z7CUpn9ejyPknhh6YP2v5MBmVBB7zXPJ1q9ekSlAWF5UbQvruEZROUz1nnfZZesISQ+vSim1efznkWtkQhuXdn3qv+7x/FubjCJznxLGyAi6dz3Gct0r3MvXnICHUuoR1yDssm1Pmim3VesDwDGaz+Ct/3THqBshgFNXNypxjNBMpCwasDHbN5lGL2SLKSQ+msHCuW90kmdSxZmY9A2ZGPEJm5AuUMnzzqoNwJyp2g3AnKfRy3P0VmSEUVG4tAAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="TEMATypeAEL" GraphicalStyleName="TEMA type AEL Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACZSURBVFhHxY0xDoAwDMT4/6eLVNEUEjOEwQwWFx9NjjHGr6A0QWmC0gSlCUoTlCYoTVCaoDRBabLDjPv75jrQu+wehcW6Oe9GoDLNXWhfcRGoTHMX2ldcBCrT3IX2FReByjR3oX3FRaAyzV1oX3ERrtJg3Zx378MU6YcvdHagNEFpgtIEpQlKE5QmKE1QmqA0QWmC0gSlxzhOcx09Xng8z4wAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="TEMATypeAEM" GraphicalStyleName="TEMA type AEM Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVFhHxc1BCoAwDABB///pKkJbgitJPKyHwbKN6THG+BVGE0YTRhNGE0YTRhNGE0YTRhNG0z7cx/19a13Zv/twHQ3zvfXuOsAA/dBR2RkusuGuys5wkQ13VXaGi2y4q7IzXGTDXZWd4cIw31vvPgIMfVHdg9GE0YTRhNGE0YTRhNGE0YTRhNGE0YTRM44ToclDWEnuLEUAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="TEMATypeBEM" GraphicalStyleName="TEMA type BEM Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVFhHxY1RCsMwDMV6/0tnc9hCaqsMw6p+CPyU2O8YYzwKShOUJihNUJqgNEFpgtIEpQlKE5QmVUx1nnf3b87hHe9m75uda6BHcB1iP98oeQ1QRq5D7OcbJa8Bysh1iP18o+Q1QBm5DrGfb5S8Bigj1yH2842S9zDFZ+kOcldQxcXHLt87v+6hNEFpgtIEpQlKE5QmKE1QmqA0QWmC0gSlxzhesFZXRBp5IwkAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="TEMATypeBEU" GraphicalStyleName="TEMA type BEU Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACPSURBVFhHxc1BDoMwDAVR7n/pkLKIwMyXilymiycl48jZxhh/hdGE0YTRhNGE0YTRhNGE0YTRhNF0D0e6ns/t166XeX3b+b/jz3WgIbSuujMOUuuqO+Mgta66Mw5S66o74yC1rrpzHVaY6S31r497CA+f+nYPRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0bP2HZKZm0uvUGTBAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="TEMATypeBKU" GraphicalStyleName="TEMA type BKU Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACjSURBVFhHxc0BDoMgEABB//9pWowQ7roqpXHbZCqsB26llL/CaMJowmjCaMJowmjCaMJowmjCaMI44/2rf9PamXa+CZs9wNCovr+bOUPn4ua4/Mo4vyLfcf7iqQ/mfV/AYG4r6N6w7wsYzG0F3Rv2fQGDuf2K7oubY6A+n9C+M/oIe5w4+I2rOzCaMJowmjCaMJowmjCaMJowmjCaMJowesr2Avh9YTpJL1IHAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="TEMATypeNEN" GraphicalStyleName="TEMA type NEN Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACVSURBVFhHxc3bCoAgEADR/v+nNxC8tE6BItPDIZ2N9YqIX2E0YTRhNGE0YTRhNGE0YTRhNGE09UM59u+I2q686zGw1DfLu+1Aw3RfRfum1g4wPI3e+B6m+yraN7V2oGG6r6J9U2sHGJ5Gb0zDk9721jfLfLyUkH7YsbIDowmjCaMJowmjCaMJowmjCaMJowmjCaMnrhtguEtQ7XZotwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="MechanicalDrivers">
+      <Class name="DieselEngine" GraphicalStyleName="Diesel Engine Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADrSURBVFhHxYvRCsMwDAP3/z+dNQYF9TDq9uIWrvY50met9SrtcZL2OEl7nKQ9TtIeJ2mPk7THjuvbv59J3dubS4LFhLKc3MtdEiwmlN1T8O24S4LFxM4q77tce7lLgsWEsnsKvh13SbCYUJaTe7lLgsWEspzcy10SLCaU5eRefpZrfULZJ5Tl5F7ukmAxoSwn93KXBIsJZTm5l7skWEwoy8m93CXBYkLZPQXfjrskWEzsrPK+y7WXuyRYTCi7p+DbcZcEiwllObmXuyR28R9S9/bm8gbtcZL2OEl7nKQ9TtIeJ2mPk7THOdbnC2GkA5hMvILdAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ElectricMotor" GraphicalStyleName="Electric Motor Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACVSURBVFhHxcwBCsJADAXR3v/SqwGzwu9YUoWx8Moy8HOstf4KowmjCaMJowmjCaMJowmjCaMJowmjCeOV51e/r53uZbjy6chE73K/HxM1zgNTvcv9+/E6PtGbO3qX+/2YqHEemOpd7vdjosZ5YKp3ud+PqTrwi9O9DDaMJowmjCaMJowmjCaMJowmjCaMJowmjJ51PABAvXsgVY1cGAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="TurbineDriver" GraphicalStyleName="Turbine Drive Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC2SURBVFhH7c9RDoMwDANQ7n/pQis5ioyhLQLDB5PeljqBZksp5VUydJKhkwydZOgkQycZOsmwZ/vUr4Z7Z9QzUczqXY7LMuSYaed8mJFfVGuGHuNeFKNwQcYzZ3g+ihGzlyn/AocL1MYIzF/F74hixL/AJxZgPNPDz0RxFRbJeCbjfhR3wiJZ7qFu53x4Ai6sv4Bey/PhCXwhk+Gd8K+PFtkFbjJ0kqGTDJ1k6CRDJxk6ydCnLCsNLGE6XKW5TQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="MiscellaneousEquipment">
+      <Class name="Silo" GraphicalStyleName="Silo Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+SURBVFhH7c4xDsAgDANA/v/ptB66RA4QoGQx0jF4iN3MrBQNb6Kh9z58Kf5GhIZe5iBogAZogAZogAZowC8DsvyNCA2Z2aOZcqAhUz4ARsez5UDDnqhkpRxo2FM+AHzZajnQcKR8AHylO+VAwxnlA2C3HGg4q3zACTS8x9oDRcpdPvHF5vEAAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="MixingEquipment">
+      <Class name="BladeAgitator" GraphicalStyleName="Blade Agitator Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB8SURBVFhH7Y4BCoAwDMT2/0/XKXRWCGXiuIFUCN7SUq6Z2VZQKkGpBKUSlEpQKkGpBOUs/es/ns2CcpYqUAWqQBWoAv8qcB6LuM94sxd5zEYIA19cSbzt+XqPkCx9Jbt9hx4j7leQ3R5hFyiVoFSCUglKJSiVoFSCUoe1AwwTgxiFzOOXAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PaddleAgitator" GraphicalStyleName="Paddle Agitator Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACCSURBVFhH7c7BCoAgEEVR//+nzYKp4XUVF/HaTHDIbirTeu+/wuiE0QmjE0YnjE4YnTA6Ydw1nvHif7sw7qoBaoAaoAaoAT4f4Lww6He0bNYybbEvPAv4qeKSFT2jdM+9uD7SRSv5TNA9M69zGtwwOmF0wuiE0QmjE0YnjE4YfXo7AIJygRqlphj5AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Pumps">
+      <Class name="CentrifugalSumpPump" GraphicalStyleName="Centrifugal Sump Pump Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADVSURBVFhH7c5BCsMwEEPR3P/SbrwQDOLbkUviLprCK0WeauZorf0UhjthOHN++tf5k99XYTii5XcegeFIXfoe8B7wvwdU/v4NDGfuWiwYzlwd0N9XjsRwJil/7IBevML/TzCsapl+p9Qxg2HlZUlxMiMYVl6WlCczgmHlZUl5MiMYVl6WlCczgmHlZUl5MiMYVl6WlCczgmHlZUl5MiMYVl6WlCczgmHVy2phUp7MCIZVLxvxWZm9OQzd1TLicyMYEl8gPrcKw5E7FwuGO2G4E4b7tOMD1yQffP86JUUAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="HorizontalCentrifugalPump" GraphicalStyleName="Horizontal Centrifugal Pump Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVFhH7Y6BCoQgEET7/5/2WmHFxnciFRPHFbzQN6PuVkp5FJROUDpB6QSlE5ROUCb7F7+KZneBUvnPAeJRQntXYTl56O4hWL4D/NoA4VYZzqqoEoqJZrlXT0RHe0NIpR7tBemz842+31xbdIGWejTLvXoiOto7hLRWKAs3O5NQry0OcnIZZeFWGc6qqBKKySw7A8t3gKcHCOIhQntXQekEpROUTlA6QekEpROUPsr2AXCMP1whMpRzAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="LiquidRingVacuumPump" GraphicalStyleName="Liquid Ring Vacuum Pump Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADESURBVFhH7c7RCoNADERR//+nt01hIAzXNVFZH2rhVHdWMtnGGI/CcCUMj3x/8ffjd10YzuRy8W86MJzxwneBd4F3gUcWcP5NB4ZH7ioPGFbcUR4wrPivBaJMcqb3KzB0KstPifMVGDoVUSllHRi6SsnZJTB01eFnlsDQdRYQv9uDofOBOlfzGQydD46n8/t4VmDo8kAf7nei7AiGTgN9OJ31XoUh8SLJmd47MNzjJXGWnHdgOJNLrxQLhithuBKG64ztA6doN2ThdAw1AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PositiveDisplacementPump" GraphicalStyleName="Positive Displacement Pump Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC1SURBVFhH7c7RCsJADETR/v9Pr0YIhOEmTapsH6xwXL0tzB5rrVth3Aljx/tjXx/6bALjmTju9J0ujGd08LnAc4HnArdcQOk7XRg7fjFuMHZ9O24wdv33BWzc6bMJjBUapdaFsRKHst8TGCs+lJ1TGCs2FMf8d2wTGIkO2elin8JIfCwb8p49z2CsxCFH/7swVnwgO6cwVnRQzymMlTjoYp/CeMXWC9iY0ne6MO6EcSeM+6zjBUANRVaoK1B+AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ProgressiveCavityPump" GraphicalStyleName="Progressive Cavity Pump Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACWSURBVFhHxc1BDoAgDABB//9plENNKasRY9bDBNk2uLXWfoXRhNGE0YTRhNGE0YTRhNGE0YTRhNE0Xo5rl9ud1X0yh8UHab+3K9Pu+VEWV9V34p7RbBjWk9zNsr5X0WwY1u98Pmm1VzSbhm/FO/FWvgfczZevxI/ItFuDDaMJowmjCaMJowmjCaMJowmjCaMJowmjp207i/s/XDjpKVkAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ScrewPump" GraphicalStyleName="Screw Pump Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVFhHxc1BCoAwDADB/v/T1R4isVmFSlkPA2YTauu9/wqjCaMJowmjCaMJowmjCaMJowmjCaPpPpzjkNub1XtSw+KDdD/ak3J7fUyHq+Z3Ys5oV5a7xLsZ7coyox016jFntCvLr+KdeCvPAW/zsEv8iJTbOdgwmjCaMJowmjCaMJowmjCaMJowmjCaMHp6OwB2rzNo8KFCSgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="VerticalCanPump" GraphicalStyleName="Vertical Can Pump Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB7SURBVFhH7c5RCsAwCAPQ3v/Sbg4KJYRVN9B+pPA6FgtmmFkrGlaiYcR9/HrgLIOGEUcUWL9f0TBCBY4oMOEsg4YR7QXc3+WOhlGtBXz5hLMMGr7BxfifRcOddemEb6JouIMLVUAFVEAFVEAFWgogfBNFw0o0rETDOjYuDwFvLPnpGBcAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="VerticalInlinePump" GraphicalStyleName="Vertical Inline Pump Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVFhH7c7RCoUwDANQ//+npxULI8tsnNC99MK5D3Ftc7TWtqJhJhoqrp/93fDbFzSM9McdvlHRMIIHq0AVqAJVYEsBhG9UNIzgcYNvVDRU/TnsaKiqAlUgpYAdWYW7GBo6dcmMMj8G3ZCy4I2yawyuyOG3FdG+MXgezga+ivYNQW82pFLmaei2FzC2ZBXuYmiYiYaZaJinHSc12T1e/Br+JQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Tanks">
+      <Class name="ConeRoofTank" GraphicalStyleName="Cone Roof Tank Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABwSURBVFhH7Y7RCoAgEAT9/5++VLDiGMII1x5WGNSRc7dExFZQKkGpBKUSlEpQzlJX3fhtFpREC8s8+VlQNj59+mL2OqShlYzMnnse0sMqXMAFXMAFXMAFXODfBVSMzJ57v+wApRKUSlAqQakEpY4oB1JlI3gOlcHUAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="DomeRoofTank" GraphicalStyleName="Dome Roof Tank Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB3SURBVFhH7c7bCoAwDAPQ/f9PVzeslxBYX5b5EOHIjNWmRcRWNFSioRINlWioRMOZ8+q3D5ypomHCJQnnOpxJOId4WPy4Yvav53ANKuTOsfc+wItVXMAFXMAFXMAFXODfBVRy59j7ftiBhko0VKKhEg2VaKgT7QAGdB983CUI5gAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DoubleWallTank" GraphicalStyleName="Double Wall Tank Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACrSURBVFhHxY3RDoJAEMT4/58+5eICrs1wD+NgUoPTxW5jjEfBMQmOSXBMgmMSHO94f/avL/rNKjgWPVL0u51+U/S7Do+LL69w91/nw+cwQTVn93gA6YYaUrqhhpRuqCGlG2pI6YYaUrqhhpRuqCGlG2pI6YYaUrqhhpRuqCGlG2pI6YYaUrqhhpRuqPEjE1Rzdo+HdvRPqjm71x9PgGMSHJPgmATHJDjmGNsLWQ+x20YlQ4sAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ExternalFloatingRoofTank" GraphicalStyleName="External Floating Roof Tank Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADBSURBVFhHxY0BDsIwDAP3/0+XZsKjMw6kU+chncjOcbq11h5FSidSOpHSiZROpHQipRMp76T/+t/wfQx9HIFfwa/bX0uY4Vcw3uXbn+EdOsCb+7vHQEGFFZ00qLCikwYVVnTSoEr0Zrq8mwazVPu8lwZXqNzgnTSoEj3AmYL30uAfsT/bCbiTBorYAZxV4W4agPCAsyvwHRnEDOBWwTdPAYC7A75/Clzgzf3d8eMJpHQipRMpnUjpREonUjqR0kfbXrcaDY57Z0F4AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="InternalFloatingRoofTank" GraphicalStyleName="Internal Floating Roof Tank Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACQSURBVFhH7Y5BDsAgCAT9/6epmqKEboyNde2BJpPioCxJRI4CJRMomUDJBEomUM6Sv/zDvVmgRJQwz8jPAmVhaeiLt71wj3aimTW3FYNLq4xmPy5prf4L7Fw/uxem6S+tYuf62b24mww0s+a2wjV2EQvEArFALBAL/HsBFppZc+3hBFAygZIJlEygZAIlD0kXg47Vt8C+7LEAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="OpenTopTank" GraphicalStyleName="Open Top Tank Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABfSURBVFhH7c7BCoAgFAVR//+nXxIUDxncOW5ucCinhXdU1VUYTRhNGE0YTRhNGE0YT5rPfLXz/7H8OCUDMiADMiADMiADtgMs353vvf1wA0YTRhNGE0YTRhNGE0ZPjQewP4EaE9GnGAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Sphere" GraphicalStyleName="Sphere Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACoSURBVFhH7Y5RDoAgDEO9/6XRfZDg1rKBZGqCydP4GF2PUsqrQJkJlB7XI68beiYKlAhvmXfOgFIzHDowD2VFgkaXV6J3oRRmF2u8HCiFVwusWl7p5VmxeHmF5VqxC+wCu8Au8IUCq0v0Mq34QoH2+xQvz4pmkF2KEsmyQg3KP7vMQHdYhhVsEIRqejPUGxFcgtCzLezcCidolv8UyAbKTKDMBMo8ynECKVRNTt8Fd+8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Vessel" GraphicalStyleName="Vessel Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABsSURBVFhH7Y4xCsAwDAPz/0+7yVgjKaaDuihwGQ6Bb1XVr0DpBMob+53vRd9MgVLBjn2NgFJxDjH6dgKUCnYoAQlIQAISkIAEJCAB1gBG306AUsEOWQMYfTsBSgU7ZA1Q9P0NKJ1A6QRKH7Ue/9hZQlm/UA8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="VesselWithPackedSection" GraphicalStyleName="VesselWithPackedSection Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVFhH7c5BCsMwDETR3P/Sbr0QqOLPVM5C2aTwWvdjGF9rrUdhnITxn+9nf/2od7owOmrs7iMwOntIqXc7MDp5LM65ncLo5LE453YKo6PGHn0AtS6MTozV0Xw+gdFRQ6MPoLHRB+TfUP93YXTykDqfwOjEkPo9hdHZQ3WMWhdGR43X3oXRUUPvA94HvA8YfYBS73ZgdNTQ6AOUercDo5OHYjhEP4FRqYNVvd+BcRLGSRjnrOsD6lMldpajA3AAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="VesselWithTrayedInternals" GraphicalStyleName="VesselWithTrayedInternals Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC+SURBVFhH5c5BCgMxDAPA/f+n0/ogcIWsdXpwDilM2QiB/Ky1jpLhJBm++f7i7wd3umToVGP/HiFDJ4Yq3O2QocOjATk6O2ToVEOjB+QxvHO2Q4ZONXTvAXhz3iVDJ4ZAvXfJ0KmG7jqgwt0OGTo8mnG3Q4YOjwbk6OyQoVMN3XtAvCHnXTJ01NDxA8KRA+I7Q75Dhg6GMJqhs0OGDo9m3O2QoVMNjR5Q4W6HDJ1qaPQAh/tvZDhJhpNkOGc9H785EYoDQzEdAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="NuclearReactors" />
+   <BaseClass name="EnergySymbols" />
+   <BaseClass name="HandValves">
+      <Class name="AngleValve" GraphicalStyleName="Angle Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADqSURBVFhHxY/bEsQgCEP7/z/tygMsjVGp1505sxADpE9K6SpUPAkVd5J/+c/1vtmJHFZeum92gEePBcDDXn/1vllB7bCyLUDvsLI8QPSwsizA18PKdIDRw8pUgNnjwnAAf9zXX8E5K3rooF8gte8joN+KFn4IF6jGdAb6rGhRDFWOiV57U/DdihpsIdM88l7zoG5FjegihnjQV/S+QdDsab0h4lU/zlnBQDPSe0fEjzNWIJHlEU8PKgrR5bMhuPhh6fUAwkyIUhhYdj2AMDz3ama+5HYAYWT+X+RyBbovChVPQsWTUPEc6fkBYNUrcLrsgjwAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="BallValve" GraphicalStyleName="Ball Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADRSURBVFhH5Y5RDoMwDEO5/6W7tlpKFmxIQDIfm/RG8lxcttbaq0CpBEolUCqBUgmUSqDM0H/jbxKzClAy2KXMZ4ASkS2vfsQ+9JG9XC496YnZT2hPf8jPFWKH7d7PfQ0xcC/dBXUc9jWAy5CrkOmkAXMVMp08eHi5cdXLg7//AOYqZDppwFyFTCcP+h5dFdRx2NfwDcbTH/Jzhdhhu/dzX4M7FGGecdYTszVcwUoj2XMGlIxRbmR8BigzPLnUA6USKJVAqQRKJVAqgVIJlDra9gFj60FaGxSsLQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ButterflyValve" GraphicalStyleName="Butterfly Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC1SURBVFhHxcxRCsJAFEPR7n/TIxFG4Zr0WYX049CS5M2x1rqVDZts2GTDJhs22bDJhk02bLJh0/vn+fs5kLPuKr4VC5r6b/GdWDh7oy/tzYTbWCTaJdw63MXC0WbCG+ImFo42E94QN7FwtJnwhriJhaPNhDfETSwcbSa8IW5ikWiXcOtwF4sz2tLO9ybhJha/mt5hH4t/nL3F7vVzFxs22bDJhk02bLJhkw2bbNhkwyYb9qzjAdhqK3CaC9CcAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="CheckValve" GraphicalStyleName="Check Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC/SURBVFhHxc5REoMgEANQ739pbJyBQkzUUo0fbwrJsnYppbxKhkkyTJJhkgyTZJgkwyQZJskw6Xv4HKHen8Lf2BX45aE78W5fPPRHdt9pB/Mx5K6bwbtswdCfzVzBO2zhYO7qrMJvbXEG8xV3R3jeFr/A2/790S7ubDEDO3rcA+e2mIU9PdUP93YQwzOwh3E/3NuBin9hH6t5ndnu7UDF3bC/GvL+8gYZJskwSYZJMkySYZIMk2SYJMMkGeaUZQVINHcky+5XjAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DiaphragmValve" GraphicalStyleName="Diaphragm Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACqSURBVFhHxY1bDoMwDAS5/6VTVNUOcsc4D7R8jLTMms3RWnsVlEpQKkGpBKUSlEpQKkGpBKWSHs6owt78vushFBV2v/qff3uYGPob2fnXw+BIdrf6f1oQ1c3KRlpEqt6Y3UmLK3cdMbOVFkbmK0b30iJzM4xs5sXm40a1i0U82uVuu4dfEQ+eItvv4YyxfBp6w8NboFSCUglKJSiVoFSCUglKJSiVoNTRjg+/mV88cNKaiQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DiverterValve" GraphicalStyleName="Diverter Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADISURBVFhHzY5REoMgDAW9/6Wp+YBUugng4KvOrD43kOQopfwVlEpQKkGpBKUSlCPOx16Nvh5BZz1MNLIz2CTwPXi3hUGDUd2408NDcjmr9az28fDWBSKfsdLLwxkV1HltbgtQNCKfsdLLQzIoqxHRefIeNi2w2sfDmxcwRnXjTg8PkwMqkatfgmoekouEnY/urPjLz06iJXpQ7mJmCZQ7+V6CFrr8PIUNpuHGj3iCaLiBcifZcAOlEpRKUCpBqQSlEpRKUOooxwc1Cjdk2E3rnAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ExcessFlowValve" GraphicalStyleName="Excess Flow Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADnSURBVFhHxY0BDsMgDAP7/08zUhGaOoZSMbmTbg1nQ45SyqdQqYRKJVQqoVIJlUqo3KH+7O8EMwaX4ZF/gTscKnfAxQZ2IlTu8LQQoVIJlUquoY4qfOe5tw8tiIU472Dv+Fv45jWMCvWMbhV2N5370AIsOOZHGTLrok8BFhDLR51Z5mCeAiyMsF684/MT2LsFjrsV3t7BbgqwMMJ6sfvm3u3chxZgAbF81JllDuYpwIJjfpQhsy76FKRCPaNbhd1N5z60IH593iW+hW9eQysp8J3n3nj4AiqVUKmESiVUKqFSCZU6yvEDxuS50xAviMsAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FourWayValve" GraphicalStyleName="Four Way Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEDSURBVFhHxY5RDsIwDEO5/6XL/BEWjL0kE1qRHsvst7SvtdZWZPgkMmSOH/5G8A6HDJnJQvD3C4Du0snhQIaK7RcA1fLp4UCGju0XAO6QO4eDczjGzhLndL9l76uMJ0sM9x0/HHbPgYv0EaPc/B4gr1xbBMhVF5nrVA44twWDPjsxc5bfFdzbwgEv3PyMuYI9W1TAD7i7gn1bOOCFm58xV7BnCwZ9dmLmLL8ruLdFgFx1kblO5YBzX0yWXHiV+1PgyRLDfccPh91zSNIVzul+y95n6OIOcnmFDB3VIXcuIUPH1gt0l08vIUPF1guMlw58GTJYOIV3OGT4JDJ8Ehk+x3q9AaqE07mwMMwTAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GateValve" GraphicalStyleName="Gate Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADGSURBVFhHxY3RDoQwCAT9/5/uHcmVVhiqOXV9mEhnYd1aa6+CUglKJSiVoFSCUglKJSiVoFQyhu9o9PcT0D92Yf/GpavMnbF7DDGYjv6FOtLbh+Jn5qusYnUTfRlELL9rZ/f24eCwY3upBFxFuvXhZEHH9jsxWxH3y6DC9lIJuIp068NBgeV37ezePhSH5qusYnUTfR0sSs5CHentwy+wb1y6ytwZu8cwLT0F/cOHt0CpBKUSlEpQKkGpBKUSlEpQKkGpo20fgUljOP6HM3UAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="GenericRotaryValve" GraphicalStyleName="Generic Rotary Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC4SURBVFhH7Y5RDoMwDEO5/6W7Ia1LsV5DOkLHRye9Edmp462U8ldQnAmKHu/f/ofobgQUiciRyI6CYstPoQNvbIAH0ZAekcy+cfF45SwXDV26ipdtw8fQhSx6+TY8oYCa2dAN18yGbhzMOt/JKrAKrAJugbtL0A3XzIZuHMz2m00v34anFNA5Ay/bBjWSSpzlfgdCl0eJvEexZQ8ZLTLyBkUiEhrZUVD0qEcI3Y2A4kxQnAmK8yjbC4xcMWrt80c7AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="GlobeValve" GraphicalStyleName="Globe Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADISURBVFhHxc3RDoMwDENR/v+nu0WaoVg3dBLCPByR2mnZxhivwjAJwyQMkzBMwjAJwyQMkzBMOobvWHR+Av3jVOor6u7w9/SVY7BC2VU+63YoP533AZalOvWaie8S79qC1M6K33G+0xakdlb8jvOdtiC1s+J3nO+0BamdFb/jfKctXPX/8HvOd9pCKp87nQntO+/64uIhdbOrHc9P5334FfX1pbvmN/3tY5iWnkL/2Ie3YJiEYRKGSRgmYZiEYRKGSRgmYZgztg9cBfeVoKrdWgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="KnifeValve" GraphicalStyleName="Knife Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC4SURBVFhH7c5RqsMwFAPR7H/Tbv1hEOlIWBScnzw4r5chIF9jjEdhPAlj8v2b/37cv9uFcdc/wwvGXe8D3ge8D3jkAXPUuX+7A2OiQ+5uYEzcqN4NjIkb1buBMXGjejcwJm5U7wbGxI3q3cCYuFG9GxgTN6p3A2PiRvVuYEzcqN4NjMkamr+L9hbGRAcX7S2MiQ4u2lsYEx1ctLcwJjrk7gbGxI3q3cCYzCHn/u0OjCdhPAnjOeP6ALEkTU6HkhhRAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="NeedleValve" GraphicalStyleName="Needle Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADUSURBVFhH7Y7LEoMwDAP5/59Oq5k6SYWUB2XcC4cdzEo2HKWUvyJlJlJmImUmUmYiZSZteI9BuDtx978K/czFq/AtvtsG8UE45YNZpnJ2NuhBpnLnlA84s4ECnb7Hc//u4I4NRqDLcMfBXRvMQD/gbAT3beBAL7r9M+YZ3LMBg/y0LN7ZMaedOphF+FHGDuzs+GBwJFjJuXN6r8MnwJNLjp1edHmnDV1plSt93qnDLnGMD+4i5QrPD4BfPw6kXOX5gTuQMhMpM5EyEykzkTITKfMoxwt1KTNoSBPvkwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PinchValve" GraphicalStyleName="Pinch Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADTSURBVFhHxYxBDsQwCAP7/09nF2khFGyyh8o9jOKMgWut9SpQKoFSCZRKoFQCpRIolUCpBEolO3yj4f+Tn2A7yN9Kf+vQ5DNsJvva71CLtHTyyDHf/hHAAcM86txPXfVG9bSoWP/UzO0f4bDo2Fw7Ahyj7Ub484Bj807tJuo8LRg2144Ax2i7EQ4HrH9q5vaPQBbNo8791FVvVM8LcgR55Jhv/wi/wt46NPkMm8m+9jukoQzzE2wH+QhvAaUSKJVAqQRKJVAqgVIJlEqgVAKljnV9AKfLJ3QuanRfAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PlugValve" GraphicalStyleName="Plug Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADISURBVFhHxYzbDoAwCEP9/5+eYsLGsN3FmPpwMjgtO0opvwKlEiiVQKkESiVQKoFSCZRKoFTShms0fF/hTT/fdKG/uYSIfXcM67B+G3IQjjKoG3fH/KxLA8d8zEa9OK/07r0O5MCx/KtOt9dh85Cx+w8NIqMMsfMXDTKz3Nn9hwYZy7/qdHsdyKH5mI16cV7p3XsdcrDzyaA36z4Ce3MJEfvuGNZh/TaE0ipv+vmmDn8BpRIolUCpBEolUCqBUgmUSqBUAqWOcpwmdlFK0WzJUAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="RotaryValve" GraphicalStyleName="Rotary Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVFhHxY0BDsIwDMT4/6cLQboSbs7INCkgmSV2uz3WWn8F5SQoJ0E5CcpJUE6CchKUHV6/+Hvj7QooK/yj+Sliv8Jn+HGZetdlvJchE4165cgLb2UQ2fuZs92bcF8GcbiQ9mqmXRzO7aF5ITt/ZsgF7stQORFNeBPU3JVB7i70zq99D43DmWjCm6DmrgyCvJw/M+QC92UQhwtpr2baxeHcHhoX/MzZ7k24L0MmGvXKkRfeyuBQ77qM9z10iMtCO/kroOxw56MZlJOgnATlJCgnQTkJyklQToJyjvV4AiLEB5SxI2wmAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="StopCheckValve" GraphicalStyleName="Stop Check Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVFhH7Y5RDsMgDEN7/0uzehIRGAdS1qU/nfS2YMdejlLKo0gxEylmIsVMpJiJFD3OD76mcGaFFKPs/CEjxSjvAe8Btx6AsquFtx9Qf6PF0b0WzvjG+WaNWfkKzrhGBfrMY20FZ1yDgT+EFxnF0GFDsAx7dTeaaeGMa6zA/tUM4IxrREFuKJ10Dbs2TEIRkK8d7cyw7hq7oKdF+d3bBrG8A3oY9ru3DWT8AroU1at737cNZNwJuls6zwYy/oV7wFNIMRMpZiLFTKSYiRTzKMcH68BJUgkhzgAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ThreeWayValve" GraphicalStyleName="Three Way Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADfSURBVFhHzY5RDsMgDEN7/0szZVJKamwCXZXu46nBfqQcrbVXoWElNKyEhpXQsJI+fMdReBr8z6VwPHsStf8ixBnFu+Au3NsH8kPLWL6CuouZLCLWzfpI5mInC4Y5ypt1EXRkMcNc9+O8ArqyyDDfwW4G+rJQmOewcwZ6skCsj47PmMUzA3tZOJYPlxbOmDmDew6/LJl4mTsU9kUporrsjvfo9SFIM5Szehe9c1gh+0nWM2ioePUBq8t3H0FDxqsP2F664dMQ+YsH7II7FDSshIaV0LASGlZCw0poWEc7Pu8bEYoyUtk9AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="PipingFittings">
+      <Class name="Blank" GraphicalStyleName="Blank Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACISURBVFhH7c5BCsQwDEPR3v/SaVMoGPHjKATSjQfeLFQH6Wqt/QrDkzB0PL/+99JvKzDMxGKltw4MM1oa6a0DwxEtJPpmBsMRLSP6ZgbDES0j+mYGw4wWRnrrwDCjpZHeOjB07BZ/MHTtlncYumpADagBNaAG1IAaUAOODnDLVkdheBKG57TrBvBIU0iqcvnvAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="BlankWithFlanges" GraphicalStyleName="BlankWithFlanges Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVFhH7c7RCsMwDEPR/v9PZ8tgYMR1rLHVe3HhFKwY5Gut9VcYdsLQ8fz270XfPoFhJZa/6Y4LwxMtjnTXgeGJlka668DwREsj3XVgeKKlke46MKxo8aY7LgwdvyjfMHR9W75h6JoD5oA5YA5oP0ALq9mBYaYq1NmBYaYq1NmBYaYq1NmBYaYq1NmBYaYqmANuP+AOGHbCsBOGfdb1AEfPXzxpGPIBAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="BlindFlange" GraphicalStyleName="Blind Flange Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABHSURBVFhH7c6xCQAwDANB77+04gFUqAhy84EnIDc3kk6zYzM7NrNj2r79/C3NjmkAAAAAAAAAAAAAAAAAcA74kR2b2bGX5gGFzsDa8KMinAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Cap" GraphicalStyleName="Cap Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACcSURBVFhH7Y4BCoAgEAT7/6etDQRZpug8MQSDiRjDnaOU8isoZ4LSuR69bvwsC0qnHa4hrcuA0nkaGxGB0nkb0lkmBKXzZaA3AqXz9fKeCJTOMgEiGoHSWSpARP5H6eyAHbADdkDowmgsSWeZgOi4QOksEdAzLlA6b5frrHdcoHSeBjLDFZROO6TvSnUZUDqjR1tQzgTlTFDOoxwnP215IjDDDL0AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ChemicalSeal" GraphicalStyleName="Chemical Seal - Diaphragm">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD6SURBVFhHxc1BDsMwDAPB/v/Tbn0wIAhjKqe0wBbJUiE/a62/QvkmlOL323+P6N8mKEUtTiMpE5SiFqeRlAlKcYqngSnvUIpanEZSJihFLz7vN/8USpGKa5buBKVIxTVLd4JSTMUnn+46lCIV1yzdCUqh4u26112CUtTi/XwbuvkblKIWp5GUCUpxiqeBKe9QilqcRlImKEUt3s+3oZu/QSnSYM1udzcoRSquWboTlGIqPvl016EUqbhm6U5QilRcs3QnKEUv3u+H7uv7BKWoxWkkZYJSnOJpYMo7lKIWp5GUCUpRi9NIygSl2MVP6d8mKN+E8k0o32N9vtAkJXbQvFpBAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ClosedFigure8Blind" GraphicalStyleName="Closed Figure8 Blind Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVFhH7c5RCsAgDANQ739ptw6EErI26nA/Hbx9xELSeu+/ouFJNFTcn/0e+DaDhhks3RlBw8hb2eoIGkZqgMGy1XJDQ4WVDvg2g4YZXz7gjYqGESz28FZBwwiWeniroGEESz28VdAwg8UGb1Q0VHxRbmio2i03NFTVgBpQA2pADagBxwdkhSuDaHgSDc/p7QL65nEqYnI4tQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ClosedFigure8BlindWithFlanges" GraphicalStyleName="ClosedFigure8BlindWithFlanges Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVFhH7c5RqsMwDAXR7H/TblUIiMtIlhxwPuoH5xGmhqtrjPEqjDthrPj+2b8f/a0D44yOPjkCYyYaWz0CY+b1A4yOrY4bjBU2etPfOjDO+PGbvqnCOKPjRt9UYczosKdvKzDO6LDRN1UYZ3Tc6JsqjFVPhm8Yq84B54BzwH8e4Eej7w6MmWjUf3dgzESj/rsDYyYa9d8dGDPRkPWVIzBmsgO0VWDcCeNOGHfCuM+4PsSxbyyQqcO+AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Flange" GraphicalStyleName="Flange Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABcSURBVFhH7Y5BCgAhDMT8/6e7epFF5jAWqSARghJpSYuIq0hZiZQu/fRL/7lI6UIAAQQQQMB7AWPhLv/5DFK6ZALWmfnIkAlYkdKFAAIIIICAE0hZiZSVSFlHtA+pU6b0kD/rLAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="HoseConnection" GraphicalStyleName="Hose Connection Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABaSURBVFhH7Y5JCgAgDMT8/6ervbnMoRWplwgRDDikmdlXpKxEyijj+JVm2ZgfWfaxG6SMQgABBBBAwPMAH8wy/79ByigEEEAAAQQQ4AFZjo1dVCNlJVLWYa0Do8h1JuTUttIAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="OpenFigure8Blind" GraphicalStyleName="Open Figure8 Blind Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVFhH7c5RCsAgDANQ739ptw6EErI26nA/Hbx9xELSeu+/ouFJNFTcn/0e+DaDhhlfPuCNioYRLPbwVkHDCJZ6eKugYQRLPbxV0DCDxQZvVDRUfFFuaJjB0p0RNIy8la2OoGGkBhgsWy03NFRY6YBvM2io2i03NFTVgBpQA2pADagBxwdkhSuDaHgSDc/p7QJ2gHEqYdgodQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="OpenFigure8BlindWithFlanges" GraphicalStyleName="OpenFigure8BlindWithFlanges">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACzSURBVFhH7c7bisMwDEXR/P9Pu1XBIMTWxU5RHuKBNZjdwNE1xngUxk4YK75/8u/H/rYCY0aPT/abKowRO6zZbyswRuyoZr+twJixw8J+U4Wx4h/jAmNGD+v3DowZO9h6gDe2ewTGjB3bHRcYMzI4R/V7B8aqO8MTxqpzwDngHPDOA/So916BMeKN6vcKjBFvVL9XYIx4o/q9AmPEG5K+cwTGSHSAbRUYO2HshLETxj7j+gCPgGkyCzutogAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Plug" GraphicalStyleName="Plug Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABOSURBVFhH7c5BCgAgCAVR739pC8GKkHZ9N7MYMFv4zN1bK5fK9jBHVXkz7q7h+vgVAAAAAAAAAAAAAAAAADwBqvJm3D0fHZVLZeVSl9sAD4Mldqt10nUAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Spacer" GraphicalStyleName="Spacer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB0SURBVFhH7Y4xDsAgDMT4/6fTphILMvSgUrockhmc4dwi4ldQVoJS4X75PYy3HVCuoFFyKihXzIZKAt5GTiJQznBAMhs5GU9QrsihcYycCkqFPno63EGp8nU8QaniAAc4wAEOcIADHFAaoI7tRqGsBGUd0S5SAZz+u+tciAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="SpacerWithFlanges" GraphicalStyleName="SpacerWithFlanges">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACNSURBVFhH7c7BCsAgDANQ//+n3TrYJaQ2KtZLB2/QeEha7/0qGmaioeL97PfBtxk0jGDpzggajnhlqyNoOFIDrg8wWLZabmiosNIfvs2goWq33NBQVQNqQA2oAekDsDC6FTT0RIV4K2joiQrxVtDQExXiraChJyrEW0FDT1RQA44POIGGmWiYiYZ5ensAw5qTCFoAmSIAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="UndefinedInterlockLogic" GraphicalStyleName="Undefined Interlock Logic">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADdSURBVFhHxY4BDoQwCAT9/6d7YsKd1mmBQnomE+1Idzlaa38F5U5Qejmf88X/vKD0oOXZJVBa9KWZJVDOGJWtLoFyhFWysgRKwhseXQJlTzg0MI/yTrRc8d5DqayWK577KIVsuWLlsCwqV2Z5bxEor5h9HgKBQsX87yMYJlTc+X5ch2BgxfzjcIlAaMXsS1zSGVwxh1LwhltYOSiV7BKe+yjvrC7hvYeyJ7pEZB4l4Q2NlAsoR1jh0XIB5YxRyUq5gNKiL1stF1B60NJMuYDSS7ZcQLkTlDtBuY92fABxL4EaB6CXBAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="WeldedConnection" GraphicalStyleName="Welded Connection Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADuSURBVFhHxc0LCkMhDETR7n/TtgYS4nWQ9zG2cIpvSDKf1tpfyfAkGa78fv1P4uwVMlRYtsLdFRlmPH4HbykydDz4BG+SDDseeoO3Mx3iwA7scHOAxZ3Y1c0BlnZiVzd+YKFC7rPO4QPDFXKfdcYDg5W803rjgaFK3mm98cBQJe+03nhgqJJ3Wm88MFTJO603Hhiq5J3WGw8MVfJO6x0+MFgh91nn8IHhCrnPOqcACzuxq5sDLO3Erm4KLMTiDuxwMux44A3ezmToeOgJ3iQZZjx4B28pMlR4fIW7KzJcYVnG2StkeJIMT5LhOe3zBScLlsy/znTyAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="PipingSpecialtyItems">
+      <Class name="BasketStrainer" GraphicalStyleName="Basket Strainer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVFhH7c7BDoMwDANQ/v+ny3pIKZFNnB3MhUlvqpzW5BhjvAqGTjB0gqETDJ1guPv95t9fchcCw51alH0LfAu0F2AP1KJMfXcdTAvknA4CyytqHx0EllfUvtuAiTsduWN3u7cOaRBYXlH76CCwvKL20UFgeUXtWweGFVXYu5yvA8OKKuo7GGbdJTr3YZi9vsCklnY+PsGQqcq7H59g+GR+hMl3FTB0gqETDJ1g6ARDJxj6jOMEcRlJUqMTwdwAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Breather" GraphicalStyleName="Breather Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVFhHxY1RDoUgEAO9/6V5PiOwKbMK0dSPScq0wFZK+RSUTlA6QekEpROUTlA6QekEpZMe9uii/nn828JZ6CDjrX0PodCRov3KXrc9TD761A/nFuCBYQybyMx+2LSQPF591it3e/VpEbnqiJW30qJSfdYrd3v1aUGONpGZ/bBpYeLyn6d+OLcQCh0p2q/sddvDWegg4619D3t0Uf88/o2HL0DpBKUTlE5QOkHpBKUTlE5QOkHpo2w/uwwJkhCnY/gAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ConeStrainer" GraphicalStyleName="Cone Strainer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEMSURBVFhHxY4BDsMgDAP7/0+zuhoMghMMomzSreDYDldK6a9Q8SRUjLh/+KNYrwIVGcoSxWOhYs1S6USGipnZxRYlT0Wwuhy5Ojvq4eLCcmS8XNTXC5PL4VcynqcXxAfAp3qB520vQiE8io/Bcu0lKMYsmiuw/O/glEP3ZivYLn+weXGm21MO3wG+1rQT290M3lycCR+Qv9a0E9vtD156SLenHJxl0L3ZCrarHJ5LsAizaK7A8u1FWACP4mOwXHN5BLEcPtULPG8vTJQC+JWM5+mER5x8BEDGXRL0URFEoQjk6uyoh4qZUTgCWSVPxRq1qGYmQ0WGUqp4LFSMyEsY1qtAxZNQ8SRUPEe6PpLkGYK7NPBgAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Damper" GraphicalStyleName="Damper Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAChSURBVFhHzc5BDoAgEENR739pDCTqWDvAQr4uXkLaIm6llE/ZkGRDkg1JNiTZkGRDkg1JNiRdh3Z8Dt6m76TFKt0foBxvtnfPgxSrvPoD8c7sfd2lxUjdR9pndJsWPXWrdJPRbVr01G2kfY/u0yITd7N3Ir2TFs7MZkS/cSsox5vt3fMgxSr//YGv2JBkQ5INSTYk2ZBkQ5INSTYk2ZBTth3l5TliDpEpnwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Desuperheater" GraphicalStyleName="De Super Heater Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACfSURBVFhH7Y5RCoAwDEO9/6WnE6ohSwb7sCr040GX19FsrbVXkWEm93CMWcTN8+41kHiKKlAFqsA/C3SHrHqEvRXI8Ane7FwWsLMCUS4y5WbwvhWIcpgp7+BdKxDlOOtvtccM/65h8lk5t+/ygL0ViHKr+wE7K5Dh02S3M/PsrEC6Q1Y9wt6Kp6gCVaAKfLtAFnHzvIuPN5BhJjLMo207EMTXtdLb+xIAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="DetonationArrestor" GraphicalStyleName="Detonation Arrestor Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC+SURBVFhHxY5RDoMwDMW4/6U7Iq2ke3WAauPtwyIyTtuttfZXUDpB6QSlE5ROUDpB6QSlE5ROZrGrp9C7glkU4bdcPiCCTndnrLRB73XnIxi/Z4zNnT7onfY5FAGhzcqOtjkUAaHNyo62ORQBoc3KjrY5FAGhzcqOtjkUATE2d/qgd9rnUARENCP6n+id9jm8D9PgV1TnH8MhHnyAumAWu3oKvSuYhBuUTlA6QekEpROUTlA6QekEpROUPtr2AoREHX4Lpza6AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="DuplexStrainer" GraphicalStyleName="Duplex Strainer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVFhH7Y7RCsNACATz/z99jaV3hN5sFUO3Lw0MkdFzPcYYPwWlE5ROUDpB6QSlE5RVzu/8ca8KyowInuHXugPKT6iw7hEoFVlI5wiUiq8eUHmczXR2yAaRzXR2yAaRzXR2yIYi5rYl4BTb21W8ljiYmc/cVbw1FLgEnGJ7u4rCgmyms0M2iGyms2MVFbKArE+gVPwPCFRIJzxAmRFhM/Bad0BZ5U7wBKUTlE5QOkHpBKUTlE5Q+hjHA4W3T0wF0YsVAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="EjectorOrEductor" GraphicalStyleName="Ejector Or Eductor Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACuSURBVFhHxcxRDoMwEANR7n/p0EVyGqxJACGZjyel4y1ba+1TGJMwJmFMwpiEMQljEsYkjEkYkzAm/R+/54ru3qBvnUa9ydXu6t6p6+b43R82uNVem/Mb8W06uHGv90j9Dr+fDq528e0J//90cONe75H6HX4/Hdxqr835jfg2HdzV7ureqevm+N0fwyHR3Rv0rf74CsYkjEkYkzAmYUzCmIQxCWMSxiSMSRhz2rYDInhnNHyxzmgAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="ExhaustHead" GraphicalStyleName="Exhaust Head Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVFhH7Y5LDsAgCES9/6VtIbGtdFT80S5YvASfykyIMX4KlJbcwzlakTI59xrExS68gBfwAl7AC/y7gBUpk3Ozg7hcDdqfHVhsKlHa+xIsF5eo7YOSWFWitQfKxGwJzX8on4yW0P6DUtJbouc9lAjt0p5wAsoSreW94QSUNUohI+EElC1k2Gg4AaWGFDoTTkCpZTacgNISKC2B0o4YDkSSJ3S8NXY2AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="ExpansionJoint" GraphicalStyleName="Expansion Joint Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACKSURBVFhH7c5LCoAwDABR73/pahapsYyCv3Gj8CRMWujUWvsURhNGE0YTRhNGE0YTRhNGE0YTxrB88evutj0c4dJTbdyvwzKmbBX1M63a7PowLN7yP+B/wOEDqux1f7WF6GnT+1AW46E3WsIY4lJ1t+3BaMJowmjCaMJowmjCaMJowmjCaMLoadMM6PJhOupa7GEAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FilterPipe" GraphicalStyleName="Filter Pipe Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC5SURBVFhH5Y7bDoAgDEP9/59GMZmQunIRNqI+nGSso+0WQliKuvQkDcfohWSeudegiBYUC8hsyXsK4HsWt5xrUAK13SjoSQWB7Z+CflSw4nGBmt4K+lBBo+WmBnpQgdF6x8D/VCjRc4vgXypYMbXAjD9UaKX3H95ToYeev3hLBSu+X6DmgzoVRih5oUaFUZgf7qlgxT8L5N6YkwbDAhHxx5w0GBeIxIxiAS8k88zNHytQl56oSz/CtgMWOQOYJmfJMAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="FlameArrestor" GraphicalStyleName="Flame Arrestor Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC+SURBVFhHxY5BDsIwDAT7/0+H+uC6bMYQiWY5jLCG2bbHGOOvoHSC0glKJyidoHSC0glKJyidzOJUu9B3BbNowl/5+gERJOmepHv+W3D//UQ0d/R/Ijvt62gCYqVRcqPbOpqAWGmU3Oi2jiYgokn0v45sdVNHExArjZIb3dbRBMRKo+RGt3U0AbHSKLnRbR3nmaR7ku7513GJjR+gLpjFqXah7wom4QalE5ROUDpB6QSlE5ROUDpB6QSlj3G8AL8WKXKLZRYHAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FlexibleHose" GraphicalStyleName="Flexible Hose Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADCSURBVFhHxYxbDsQgDAN7/0uzymoDwXV4deV+jDDjJFcp5VWoVEKlEiqVUKmESiVUKqFSCZVKWvhGMpD4U/BeWriLYH8C3smL3z/6mE/BG7fCXhyKjLoVcP9W2ItDkVk/A3e7YufwzmwE99JihX/spMUKtrOzx+a70vMus13rfQZnW5gcmTHat857nGthcGAF2483PEdH/zVAcYrdibC++9dAhp+Q3UNfw1tQqYRKJVQqoVIJlUqoVEKlEiqVUKmjXB8P8Xkiky9UkgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="InLineMixer" GraphicalStyleName="In Line Mixer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVFhHxc1BDsMgDADB/P/TNIlqsNw1bS+bwwozRuIYYzwaohmiGaIZohmiGaIZohmiGaIZohmi2RrO0Sj+m//OIS3bx41fdbvq9c0a3ot65rpd59nqGa0BHvwy1/u3Odt9n8M51mV4PqN/Paz6drnzq53TjvxjaRR/3v/myxMhmiGaIZohmiGaIZohmiGaIZohmiGaIXqN4wXZiClyDomSKgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="InLineSilencer" GraphicalStyleName="In Line Silencer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC8SURBVFhHxY7RDoMwDAP5/5/uiDST4ToQadQ8nIiOS9ttjPEqUjqR0omUTqR0IqUTKZ1I6URKJ7PY1Sr4rmAWRfgvtw+IAMA9SXX+Kfj93hEd4H8KdNznUASKTsNgh3dzKIKKbgfQ814ORXBFtN0eHfc5FEGHzg4abnMogg6dHTTc5lAEFdEB/qdAx30O38M4eIrq/GM4xMIHsAtmsatV8F3BJNxI6URKJ1I6kdKJlE6kdCKlEymdSOljbB9QEilyrRNomAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PulsationDamper" GraphicalStyleName="Pulsation Damper Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABqSURBVFhH7Y5BCoAwDAT7/09HI3gJExurpJctTA/Tws4ws62g7ARlhfP4dRHf3oDyCRolVwVlxmxkJQJlhgIUoAAFKEABClCAApxsZGXcQTnDxyLxTxWUVb4M36CsooDtAX+AshOUfdg4AGPPhRZE7TtaAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="RemovableSpool" GraphicalStyleName="Removable Spool Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVFhH7c5LDoQwDARR7n/poCAZrKQawq/ZsHgaU5BxplLKpzA6YXTC6ITRCaMTRieMTtuwjP0HT2v3yBdv+S+wewGX2LnsXYfmxVv+C9y+QP2u+5PBs1V3Nj8cyYdjzr8xn4FRyQtizu0KjEpdlrU9ns/AqMQStUz1PRiVvICWUTuCUVFLQ/tuBEYnjE4YnTA6YXTC6ITRCaMTRp8yzeNiaTI1oaEwAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="SteamTrap" GraphicalStyleName="Steam Trap Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB4SURBVFhH7Y5RCoAwDEN3/0tXHUylLJKPrAPJx4OuWehrEbGV6bKSZzjHKsbNfvceUrAKC1jAAv8QuP5m8h9E/gsDBkUHBgyKDgwYFB0YMCg6MGBQdGDAoOjAgEHRgcEqLGABC1jgU6CKcbPffT92MF1WMl3WEe0A1qcNji19Q58AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="TemporaryStrainer" GraphicalStyleName="Temporary Strainer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD6SURBVFhHxY6BEsIgDEP3/z+NZncolLSkONC757Y0SXuVUv4KFU9CxYj3D38U61WgIkNZongsVGxZKk1kqFjJLm5Rj6AiWF1uF896uLi43CPqG4XkcviVjOcZBfEA+FQv8Lz9R6JwBdbffwQHYBbNFVj+++KUQ/dmK9gud7CL6QF4WtOT2O5usHNxJTygPq3pSWy3O9hF+gDo3mwF2/V5uT+CRZhFcwWW7z9+XDBjesAtiEfAp3qB5x2FRCmAX8l4nkG4xeQRM6I+KoLVI5Brs7MeKlZm4QhklTwVW9SilkyGigylVPFYqBhRlzCsV4GKJ6HiSah4jnK9ADrKL2wZ7ls5AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="TTypeStrainer" GraphicalStyleName="T-type Strainer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACaSURBVFhH7dNBDsMgDAVR7n9pEi+QEmsAO1E+i1DpdTFFtjcttdalMCphnDk/9nXj30Rh7Bkte3oERhJZYG+yh2Ak0cGfHJAemniP0dsH7AOWH2CiQzPLDUay/ABjw3sLRr+NYJxpy678myiMUW8WNxij9gH/OcAWZfkZPRiVMCphVMKohFEJoxJGz//FIvyMHoxKGJUw6tRyAPNXazAt52MeAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="VentCover" GraphicalStyleName="Vent Cover Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACiSURBVFhHxc5ZDoMwDABR7n/pAB+WWCbESWCo9FQxLbaXUsqvMJowmjCaMJowmjCaMJowmjBmbZ/ti3/LwpgRy2ePwNhyXTpzBMYntWWjR2CsaS0ZOQIjyQ7vPQLjVffQjv9jPOpdHrLvYQyjy0PmfYy72eWhNYfjS8vD07x7eHl5qM09P3y0PND808MfMJowmjCaMJowmjCaMJowmjB6yrICFsrC2Cp2A+wAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="VentSilencer" GraphicalStyleName="Vent Silencer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVFhH7c7RCoQwDERR//+na/MQKOEmqVXiSxYOW6fKzDXG+BWGlTCMzN/847sTGEZkgLJ3JzCMrMVfjMAwYkvl+c0QDCNe2ekIDCM94NcBUpKx32Qw9GQFPaAHlA6Qs1ozPe/C0ENllD2BoccWZM87MPRQwZrRfQZDjy1Ta6bnXRh6soIe0ANKBmTsNxkMI17JSbnAMCJFHvvuDgwrYVgJwzrjugEjok1ONR5nKQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="YTypeStrainer" GraphicalStyleName="Y-type Strainer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACuSURBVFhH7Y5BEoQgDAT9/6dZ57BE3UZQw+xFq7oMTUJmKaX8FZROUDpB6QSlE5SzWL/1d3C1gMts3gBvgG4AB999dW8t4LLH1Rnqj+JGAHFljnqjuBlAjM5SXxQPAoiReeqJ4mEA0XuD7qNICCDO3qG7KJICiNZb5HeHTFohjqDMYiQEyky2ISjQ7jALLabl4kfMoLVcoMzkbLlA6QSlE5ROUDpB6QSlE5Q+yvIBvkdxKrWiJAIAAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Reducers">
+      <Class name="ConcentricReducer" GraphicalStyleName="Concentric Reducer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACrSURBVFhH7Y7BDoQgEEP9/59m48ZntQ4RMcwelsMLZQrTLqWUnxIOMzlfvtfzg9FIbOHreQR/FBKVMIqA+2+RaFxOEXD/KRKdyygC7t8h0fE5giLgviPR8LgHisDF30VgjsBzqsYoZoFZYBaYBWaB/yuw7j1y8XcRmD0QBO47Eg2PIwgC9++QaPxMELj/FInKMoLA/bdIbMsJAvxRSCQFOuEwk3CYSTjMoywfxtlDWBqG/EoAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="EccentricReducer" GraphicalStyleName="Eccentric Reducer Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACMSURBVFhH7Y5JCsAwDAP7/0+nC1VViglZbOVQHwaGBDzaSilLMR+VUA5VgebVfeTzEUUOyAE5IAfkgH8POBtLBlhhQAkYUAsDiuOAljCgOAzoCQPKxICRMKAMHJgJA0rHIY8woDQc9AwDSuVwRBhQjEBkGFBeIUUYUO6oKgwo4jAwH5WYj0rMRx1l2wF3Tj9cwbVA6wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="GeneralInstrumentSymbols">
+      <Class name="AuxiliaryLocAccessibleDCS" GraphicalStyleName="Auxiliary Loc Accessible DCS Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADKSURBVFhHzY5REoQwCEO9/6W7244UmyFYR4r9eGNMCuEopXyKaWai4i+zkM7W2wUEiDWMzL4Z/rsgg9VnGcObQZ8GzHvCzE4evCwX7vaaAT56i7dbxRnggyjYfhU7HIBhNFaHG0ZjdQyh6JXsfUAW0tl6u4BgFe4BWUhn6+0CglXsfcDqI6wON4zG6hjC6zcatl/FLgegjsDbrQKDoCPu9tKAeU+Y2UkDofosY3gz6NMAqXnUm+G/i3M4A+lsvdefLzDNTEwzj3L8ACHLaiPovCXHAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="AuxiliaryLocAccessibleDiscreteInstrument" GraphicalStyleName="Auxiliary Loc Accessible Discrete Instrument Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADGSURBVFhHzY6BDoMgDAX9/59mg6RGy1HLpGVLbtET3ntHKWUrKDNBafH91T9En/WAkvCUeM5oUF75KXTiDkphtljjuY+y8rZceMphuahcsPJ6sbhcGOX2YueAqHKB8u8vOwdElwu6Z/ghCnNAFtLZes8H9SEKc0AW0tl6zwf1IYr/HdBegkdQ/v1l94AmgkaMcnuxe0CTi0dYeSgrq0Y85aAU3o7w3Ed5pYbMDpm5g5LwhHrOaFBaSAmhz3pAmQnKTFDmUY4PWc4Bmun7eKQAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="AuxiliaryLocAccessiblePLC" GraphicalStyleName="Auxiliary Loc Accessible PLC Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADkSURBVFhHxY5RDsUgCAR7/0v7fKagoSyIWvoxyZbBpVcp5VPUYSY91JgF3Wx3OQjhQfur7/ibQ6DoUbLzlsNkCdpbfQ+Fhrez0gGFxPNEtAeKEctpRLqgINDcY7YPCjSLMNOJxeZxwutVhVzaxeru4RZy4RSov4cas6Cb7S4HId7C/IEs6Ga7y+EWcuEUqL+HQcilXazuHqQ49BNeLxRoFmGmEwoCzT1m+6AYsZxGpAsKieeJaA8UGt7OSgcUCLS3+h4Ki0fJzlsOgZI/tL/6jr851JgF3Wx3x48vUIeZqMM8yvUDIctqI/AA9S8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="AuxiliaryLocInaccessibleDCS" GraphicalStyleName="Auxiliary Loc Inaccessible DCS Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADSSURBVFhHzY5RDoUgDAS9/6V5D2JBNrsVY0E+Jq6d0vZIKX0KLa6khX9che0se2sAgbDHyGhP91+DeJjryim8N1iXQtWeMDJTi5fLjbu5VGDTW7zZLZwCG6JQ81vY4QCU0bAdroyG7eik5ZnsfQDD815duYz50lMDiFm4BzA879WVy5gvPTWAmMXeB8w+gu1wZTRsRyev32jU/BZ2OQBzBN7sFlAEHXE3VwpVe8LITCmMXFdO4b3BuhRI9lE93X8N5+MV2M6y9/rzBbS4ElpcRzp+FPV+Dw44QzIAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="AuxiliaryLocInaccessibleDiscreteInstrument" GraphicalStyleName="Auxiliary Loc Inaccessible Discrete Instrument Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADQSURBVFhHzY6BDsMgCAX7/z/thglNiyfFVXRLbqmHPt5RStkKypWg9Pj+5A+xdyOgJCJLIncsKK/8FDrwBqUyutgSeY9SeLtcecphOWm54uW1YvJypZfbip0FspYrlH8/7CyQvVyxe7qDLNwChDf3fG8m6LzeOT/MIAu3AOHNPd+bCTqvd84PM8jifwvUQ3IJyr8fdheoIqlEL7cVuwtUObmEl4dSmFXiKQel8rZE5D3KKxIyWmTkDUoiEhq5Y0HpoUsIezcCypWgXAnKdZTjA0z4FYYeQ3ACAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="AuxiliaryLocInaccessiblePLC" GraphicalStyleName="Auxiliary Loc Inaccessible PLC Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADsSURBVFhHxY5RDsUgCAR7/0v7rCloKAuCPvsxyZaBtVcp5VPU4Ul6qPEU9GZ7l4MQHrSfveNvDoGiV8nKLYfJErSXvYdCw9vJdEAh8TwR7YFixHIakS4oCDT3mO2DAs0izHRisfg44fWqQi6tYnX38Ai5sAvU30ONGpa35sjdkG87HIT4F+YPaFjemiN3Q77tcHiEXNgF6u9hEHJpFau7Byk2/YTXCwWaRZjphIJAc4/ZPihGLKcR6YJC4nki2gOFhreT6YACgfay91BYvEpWbjkESm5oP3vH3xxqPAW92d4dP75AHZ5EHZ6jXD8U9X4P6dVu1wAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="FieldMountedDCS" GraphicalStyleName="Field Mounted DCS Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC6SURBVFhH7Y5RDoAwCEO9/6WnMzJcQ3FGRD/28WJtB2UppXyKaWaiYpNZSOfe2wQEiDWMjL7p/psgg9VnGcObQZ8GzLvDyE4ePCwXrvaaAT56irdbxRHggyjYfhV/OADDaKwON4zG6uhC0W8yD5gHzAPcA94+wupww2isji48f6Nh+1X85QDUEXi7VWAQdMTVXhow7w4jO2kgVJ9lDG8GfRogNY960/03cQxnIJ177/nnC0wzE9PMoywr4Y7Nv4T0bLEAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FieldMountedDiscreteHardwareInterlock" GraphicalStyleName="Field Mounted Discrete Hardware Interlock Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADdSURBVFhHxY4JDoMwDAT5/6dTjOQWwjixnaOVRiUD2d2jlPJXUO4EpZfzd/7xOy8oPWj56AiUPerSkREoW1hl2REoLXolmREoCW94dATKmnBo4HuUd6LlivceSiVbrnjuoxRGy5VeDstJ5Uor7y0mlytW7vOwqFyh/N/D4nKl7vk+XIfFIyj/cbjEohFW7ktccvKIVh5KYdaIXg5KZXSE5z7KO9kR3nsoa6IjIt+jJLyhkXIBpUUvPFouoGxhlWTKBZQ96rJsuYDSg5aOlAsovYyWCyh3gnInKPdRjg//5Y0OSZdqQwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="FieldMountedDiscreteInstrument" GraphicalStyleName="Field Mounted Discrete Instrument Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC0SURBVFhH7Y5RDoUgDAS9/6VRSJpoGbAopX74knkJI+zullIKBeVKUPY4fvkP0XctoCQsJZY7GpRnHoUOvEEpjBZrLO9RZt6WC3c5LCeVC728WkwuF1q5tYgc4FUuUP71EDnAu1zQPc0PXvwD/gHfHVAOziMo/3qIHlCE04hWbi2iBxQ5eUQvD2Vm1oi7HJTC2xGW9yjP5JDRISNvUBKWUMsdDcoeUkLouxZQrgTlSlCuI207GaBlNp6H988AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FieldMountedPLC" GraphicalStyleName="Field Mounted PLC Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADjSURBVFhHxY7RFoUgCAT7/5/2WueCRiwImj3MaXVw6SilfIp6uZMWatwF7bz2chDCg+az7/jMIVD0KJl5y2GwBM1l30Oh4c1kOqCQeJ6I9kDRYzmNSBcUBLr3GO2DAt1FGOnEYnI54fWqQg7NYnW38BdyYBWov4UapVyNtuMmKb+J+QNv/4S24yb772pQfwudkEOzWN0tSLHoJ7xeKNBdhJFOKAh07zHaB0WP5TQiXVBIPE9Ee6DQ8GYyHVAg0Fz2PRQWj5KZtxwCJSc0n33HZw417oJ2Xnv7wxeolztRL/dRjh+AUMXHJXmmkQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PrimaryLocAccessibleDCS" GraphicalStyleName="Primary Loc Accessible DCS Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADESURBVFhH7Y5BEoUwCEO9/6X7fztSbIZgHSm6cPHGmBTCVkp5FNPMRMVfZiGdrbcLCBBrGJl9M/x3QQarzzKGN4M+DZh3hZmdPLhZLpztNQN8dBdvt4o9wAdRsP0q3nAAhtFYHW4YjdUxhKJX8h3gHpCFdLbeLiBYxXeAe8DqI6wON4zG6hjC4zcatl/FWw5AHYG3WwUGQUec7aUB864ws5MGQvVZxvBm0KcBUvOoN8N/F/twBtLZeo8/T2CamZhmHmX7AQG0m/GBLwxIAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PrimaryLocAccessibleDiscreteInstrument" GraphicalStyleName="Primary Loc Accessible Discrete Instrument Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC/SURBVFhH7Y5BDsMgDATz/0/TguQqMQMxDbZ7aKWpkgns7lFKSQVlJChnvH/1D9FnLaAkLCWWMxqUZ74KXbiDUlgt1ljuo6w8LRfuclhuKhdmeb3YXC6McnuROcCrXKD860vmAO9yQfcMP3jx2wOikM7W+3lQH7z4DxgOaC/OIyj/+pI9oAmnEaPcXmQPaHLziFkeysquEXc5KIWnIyz3UZ6pIatDVu6gJCyhljMalDOkhNBnLaCMBGUkKOMoxws5tzNo3RiUNAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PrimaryLocAccessiblePLC" GraphicalStyleName="Primary Loc Accessible PLC Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADkSURBVFhHxY5BEgMhCAT3/582xgpokBFBiz10ZZbGIU8p5VXUYSY91JgF3Wx3OQhhQfvRd/zNwVE0lZy85bBZgvai76HQsHYiHVBILE94e6AYWTkNTxcUBJpb7PZBgWYedjqxODxOWL2qkEunrLp7+Am5cAvU30ONUt5GuzHJDOhmu8tBkbfRbvzJ8fc2qL+HQcilU1bdPUhx6U9YvVCgmYedTigINLfY7YNiZOU0PF1QSCxPeHug0LB2Ih1QINBe9D0UK6aSk7ccHCVfaD/6jr851JgF3Wx3x483UIeZqMM8yvMBoGeT+UAnPHwAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="PrimaryLocInaccessibleDCS" GraphicalStyleName="Primary Loc Inaccessible DCS Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADJSURBVFhH7Y5LEoUgDAS9/6V5D8oQmcpELEN04aLLMU0+WynlUcxiJhr+MQvZ2fb2AAKxmpHZN8N/D6Sx1pljeD1Yp4LVrjAzk4uby4WzuabAR3fxZmvYBT6Igs3X8IYDUEZj7XBlNNaOQUpeyXeAe4CF5706cxXx7U0PIFbxHeAesPoIa4cro7F2DPL4jYbN1/CWAzBH4M3WgCLoiLO5VLDaFWZmUiHUOnMMrwfrVCDVR70Z/nvYmzOQnW3v8ecJzGImZjGPsv0A+zql5xLQvZcAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="PrimaryLocInaccessibleDiscreteInstrument" GraphicalStyleName="Primary Loc Inaccessible Discrete Instrument Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADESURBVFhH7Y5BDsMgDATz/0/TGslVYgbHNBh6aKWpwmDWe5RStoJyJSg93j/5Q+xsBJREZElkxoLyzFehA29QKqOLLZH3KIWny5W7HJaTliteXismL1d6ua3YWSBruUL518POAtnLFbune5HFbxcgvHvP9+4Eva8znw9zkcW/QLdAPSSXoPzrYXeBKpJK9HJbsbtAlZNLeHkohVkl7nJQKk9LRN6jPCMho0VG3qAkIqGRGQtKD11C2NkIKFeCciUo11GOFzNMPV5WVMK2AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PrimaryLocInaccessiblePLC" GraphicalStyleName="Primary Loc Inaccessible PLC Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADoSURBVFhHxY5REsMgCERz/0tb4xQ0hAVBx3y86YaHS69Syqeow5P0UOMp6Ga7y0EID9rPvuNvDoGiV8nKWw6TJWgv+x4KDW8n0wGFxPNEtAeKEctpRLqgINDcY7YPCjSLMNOJxeJxwutVhVxaxeru4S/kwi5Qfw81Srkb7cZLSixvzZG7Id92OChyN9qNhxx/d4P6exiEXFrF6u5Bik1/wuuFAs0izHRCQaC5x2wfFCOW04h0QSHxPBHtgULD28l0QIFAe9n3UFi8SlbecgiU3NB+9h1/c6jxFHSz3R0/vkAdnkQdnqNcP5n8ne9YL/JOAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="InlineInstruments">
+      <Class name="AveragingPitotTube" GraphicalStyleName="Averaging Pitot Tube Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACnSURBVFhH7Y5BCsMwEMTy/0+7dSBtOqzwHKYbAjkIbGvFehtjXEr52Mn38D52cezc934OIv7F84HnA/f+wJxRdGaFNigcEg0Kh0SDwiHRoKiYM4rOrNAGhUOiQeGQaFA4JBoUFXNG0ZkV2qBwSDQoHBINCodEg6Jizig6s0IbFA6JBoVDokHhkGhQOCQaFA6JBoVDovkRXRw7973nyxWUj52Uj32M7QU5ht+tJbjYwgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ControlValve" GraphicalStyleName="Control Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACySURBVFhH7Y7RCgIxDATv/3+6modAXCY1gbMKRhivnYTtXmutr4LyJCjf8fzZ3wu6UwVlxu6x3WwHSqIa3i2BUmmHNvZRKj9RoItmZKCs0nkoA2WVKTAFpsAUmAL/UcAeyR7a+WymoIx4EIXS3Z3OMlBGNMju7uLXz47eM1BGsiDzjs6MzCsoIxRkzn08R8gRKCMxyM5ZsM6yPQVlxIPLgd19kpFqkHJbgU+D8iQoz7GuB9VKS1C0k8FvAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FlowConditioningDevice" GraphicalStyleName="Flow Conditioning Device Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVFhH7c6xCsAgDABR//+n0xKILXK4eS4ZHsRzSEZEXIXRhNGE0YTRhNGE0YTRhNH0De9oqZ25dw7Lxyl9wPYAS+3MvXNYPk7pA7YHWGpn7p3D8nFKH7A9wFI7c+//cQNGE0YTRhNGE0YTRhNGE0YTRk+MB/iB+ZNxBvR5AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FlowNozzle" GraphicalStyleName="Flow Nozzle Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVFhH7Y7bDoAgDEP9/5+el6QUJgQxrr7s4STHTdZuZvYr3aESyqX3H6KhHAowU0CpgpUlKC70/FYUoQzCootQJiFRRSgPj6MI8PtVKC+PocgKzfsibhFFFsgCWSALZIHPC5zvVmneF3GLETgC/H4VyuTYV4EeyuB4VDCguJDoYECpwhTBgHIowEwBRRwMukMl3aGS7lCHbTu5QUFadR11MgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Flume" GraphicalStyleName="Flume Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVFhHxdTRDoMgEAVR//+naW1iXOiEXLQdH07CToR9c2utPQqjCaMJowmjCaPpPHyO3x/8Wz+8x0Ptd83e7YZqdimR3sc4ih8Lv6swzoxLxnkVxtTVpRVGE0YTRhNGE0YTRhNGE8bUI/+BfemB5lUYR+mS9LsK4+7KY1V6vx/CS6tm756HHy9NYTRhNGE0YTRhNGE0YfS07QUwtY0OhJX7iAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Magnetic" GraphicalStyleName="Magnetic Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACZSURBVFhH7Y7RCsAgCEX3/z/dtqAW6ikaZBv4cOimV71HSmkrZtGTR1zSi3Iz361CNFYRASJABPh/APK9nccGcfvUEqNGqNkqJhaoJUaNULNVTCxQS4waoWarmFxA7wjpwwZRfPSOkD5sEMVH7wjpwwbR+kj3kD5sEK2PdA/pw8YqIkAEiADfDuBFuZnvtp8dmEVPzKIf6TgBBnPlp+VPlOsAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Orifice" GraphicalStyleName="Orifice Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACiSURBVFhH7c7BCoNQFEPB/v9PW7sNEzCb143CIBzB3M91XX/FeBLjU/dzv/ztKcbUhtYujGkdal0Y0zrUujCmdah1YUzrUOvCmNah1oUxrUOtC2Nah1oXxrQOtS6Mafnhz3vAe8B7wLED1i6MaR1qXRjTOtS6MKZ1qHVhTOtQ68KY1qHWhTGtQ60LY1qHWhfGtA61LoxPLUMN40mMJzGec32+Sj9pMq2D60MAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="OrificeInQuickChangeFitting" GraphicalStyleName="Orifice In Quick Change Fitting Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACcSURBVFhH7c5BCoRAEARB///pWS9eJGxLZacPKiRCil25jDFaoZwJZcr6rC9/S6FMaQ3Yxp9GUCa0BuxHn0RQntEacDR2N4KyojXgbOROBOURrQHp8asRlEKHU1dBKdIxuQpKkY7JVVCKdEyuglKkh98VkLoKSpGOyVVQinRMroJSpGNyFZQiPfwFfAF/DUjZ/1tBORPKmVDOYyw/jNBrMA0ssXIAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="PitotTube" GraphicalStyleName="Pitot Tube Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACFSURBVFhH7Y5BCoAwDAT7/09HLbTWkMU9rClCDgM145A0M9tKOMzkfpzPLMbOvnc+nPiKOqAOqAPqgDrg/wdc/614/4ZvoGBQNFAwKBooGBQNFAyKBgoGRQMFg6KBgkHRQMGgaKBgUDRQMCgaKBgUDRQMiuYhshg7+971YwfhMJNwmIe1A6yTBZYhVZP0AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PositiveDisplacement" GraphicalStyleName="Positive Displacement Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVFhH7Y5bDoAgDAS9/6XxEUuXTUtKUlETPiYu7FS6lVJexbyciYYjzkLevN6tgYqnWAusBf6zwHm2QIdhV2CnOddwF+eXJcTqrTsEe/Y0gBRB3OiM52s4Ipc9xB2dYb8pJUfJmHGLCBkzbhEhY8YtImTMuEWEjJmmGPmhuKMz7HfLHuJGZzxfAwgsIVZv3SHYs6eBi3uIQYdhV2CnOddAxVOsBdYC315gFvLm9S4e3sC8nIl5OY+y7bRAq+Ez8fEoAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Rotameter" GraphicalStyleName="Rotameter Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADMSURBVFhHxY+BDoMwCAX9/5/uZAkq7dVARVxyU27t421rrX0KykpQVoKyEpSVoOzZP/I1pT8fAaXiXeA9R6AUVgKX7qBc/DdC9O4oHixXIhl2SFguSI43yw5JBQRvCTskF9DnXe75krhcuWbO8s+XlwvQ/HfHS0EBctMfMhiWUaHj5eUCs3w7JJbQLHne5dohuYAnzw5JBbzLhVEklIhksHxQInoXpbBSYukOSUUCPaHecwTKHl0woz8fAWUlKCtBWQnKSlBWgrKOtv0AEohnNJWqLfMAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="RotameterWithIntegralValve" GraphicalStyleName="Rotameter With Integral Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADNSURBVFhHxY5RDoNACAW9/6W3khTd4oDw89pkGhh5LMda66+gVIJSCUolKJWgVIJSCUolKDucP/tD4mwFyorOI5MjUGaMFjdnUWZMDjA68yiNGO4sIyxXZe+ieNDq+L2L57L8XXwf8cG9d3x2wp6jHXcRBmPv9ZSYffRXcZZO7B2fnbDnaMdPsxODFO7guSz/EE4MZAvesFyVRZkxPaIzjzJjckB3FmWFLX5b3n3cQNnBDyHibAVKJSiVoFSCUglKJSiVoFSCUglKHev4AClpYzgQg/rHAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Target" GraphicalStyleName="Target Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACWSURBVFhH7Y5LDoAwCER7/0ujNvE3MmEWSGPs4iUtjwGamQ3FLVZyPtZnFfvOvvd4gHiLecA8YB7w7QOUngicQYWH0hOBM6jwUHoicAYVHkpPBM6gwmPrQbAnAjNUeDzC84DfHYBkZKhQyMhQoZCRoUIhI0OFQkaGCoWMDBUKGRkqFDIyN1HFvrPvvX5G4BYrcYt1WFsAMtHzmXw+vAkAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="TurbineOrPropeller" GraphicalStyleName="Turbine Or Propeller Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACuSURBVFhH7Y5JDoAgEAT9/6dxSWiNUDgMZLxwqKShF9hSSr9SvYzkFoeMIr95vSvxMloUIyNdCeMI5bx9NAjKeftoEJTz9tEgKOfto9GiGBnpSqwPdIyc5Ly3p7PE+kDn0MmMDhoWZnTQsDCjg8YXOe/t6SyxPtAxVIyMdCXWB4wjlPP20SCsOeLdR4OgnLePBkE5bx+NFsXISFfikFHkN693n4c/qF5GUr2MI207j5LJw7DUBn8AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Ultrasonic" GraphicalStyleName="Ultrasonic Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACPSURBVFhH7Y5RCoAwDEO9/6WrG1RHaLYOXKfQjwczz9AcIrIVM4zkeVzPKPRmvXs/QKwiB+SAHPDPAcUh+I8X7FKhzOYjsEcFy5Se64E9KljWMvIW2KHCwxsdKjyMOpbHjAovvZ7lMKPCC+t5cypmKF0E/1HQUbGKHJADcsC3B0ShN+vd9mMHZhiJGcYhxwlgOfeVoKZhTQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Venturi" GraphicalStyleName="Venturi Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACbSURBVFhH7Y5RDoAgDEO9/6WnIyni7DQaKD98vKS8NmSbmU2FSiVUKqFSCZVKqFRyhhLvg9Gc4YgArifZ/5dBmwHcH9g/bS7vGkIB3DO+bkD0afGG70Hsnoj7tBjFOmAdsA5YB3Q7wPcgdk/EfVoA94yvGxA9LTwDuD+wf9pc3jWQcU+y/2tQMf2ACJVKqFRCpRIqlVCphEodtu3FKUlSChY+CwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Vortex" GraphicalStyleName="Vortex Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACjSURBVFhH7Y5RDoAwCEO9/6XnMNlcWKuNyVATPl7GaAtspZRXgc1IzqKWUbSdx95eOGEVeUAekAf8+wDzKL4rfJ4KiOaxV/EjfI4KiClc/0puZJrRC2EQ81hfyRveRwXEnefJDCogmMf6St7wPiogpnD9K7mRaUYvhEHNY6/iR/gcFRDmUXxX+DwVVpEH5AF5wLcPiKLtPPaOnzeAzUhgM46y7cjT9Zcm1vGMAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="WedgeMeter" GraphicalStyleName="Wedge Meter Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACgSURBVFhH7Y5JDsAgDAP5/6dpQQpL5ACl1PTAYUSwncV577cCRSZQZAJFJlBkAkUmubhLFrIz7k0FMFeDdlSmvDr0lnKmnp0Lbaj/LL25piEa0kewerVmGiUtD/Fklmlogr8qU/1T0WkUrNxsv2m0CFnJl/UIOmsaI6zoMY2vOAecA84B/z6AheyMe8vPDqDIBIpMoMgEikygyASKPLy7AEdZE4iJm/JqAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Weir" GraphicalStyleName="Weir Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACdSURBVFhH7Y5BDsAgCAT9/6dtbUJFslRrde3Bw0SYRSXEGJcCJRMomUDJBEomUDKBkkkuzjIh/QzQH0Uopx36in7Tvp0LG5i+l9q7biAO+Ra8u9a5geYpQ7x5yw0sKR81U/R3UbkoeHO9993giTQr87puwc66QQsj7rjBLPYCe4G9wL8XYCF/Xv/qZgVQMoGSCZRMoGQCJRMoecRwAFdHSVJWYk6ZAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="PipeLines">
+      <Class name="ExistingPrimary" GraphicalStyleName="Existing Primary Style" />
+      <Class name="ExistingSecondary" GraphicalStyleName="Existing Secondary Style" />
+      <Class name="Jacketed" GraphicalStyleName="Jacketed Style" />
+      <Class name="NewPrimary" GraphicalStyleName="New Primary Style" />
+      <Class name="NewSecondary" GraphicalStyleName="New Secondary Style" />
+      <Class name="Primary" GraphicalStyleName="Primary Style" />
+      <Class name="Secondary" GraphicalStyleName="Secondary Style" />
+   </BaseClass>
+   <BaseClass name="SignalLines">
+      <Class name="CapillaryTube" GraphicalStyleName="Capillary Tube Style" />
+      <Class name="Electrical" GraphicalStyleName="Electrical Style" />
+      <Class name="ElectromagneticSignal" GraphicalStyleName="ElectromagneticSignal" />
+      <Class name="Hydraulic" GraphicalStyleName="Hydraulic Style" />
+      <Class name="Leader" GraphicalStyleName="Leader Style" />
+      <Class name="MechanicalLink" GraphicalStyleName="MechanicalLink" />
+      <Class name="Pneumatic" GraphicalStyleName="Pneumatic Style" />
+      <Class name="Software" GraphicalStyleName="Software Style" />
+      <Class name="Tubing" GraphicalStyleName="Tubing Style" />
+   </BaseClass>
+   <BaseClass name="Nozzles">
+      <Class name="AssumedNozzle" GraphicalStyleName="Assumed Nozzle Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABfSURBVFhHxcmxCQAwDASx7L+04wFUpLoYhOH+zMxXjCXGEmOJscRYYiwxlhhLjCXGEmOJscRYYiwxlhhf7e3z9oqxxFhiLDGWGEuMJcYSY4mxxFhiLDGWGEuMJcbOnAtZG/KofA9YCwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="DoubleLineNozzle" GraphicalStyleName="Double Line Nozzle Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABwSURBVFhH7c5BCsAgEENR73/pqS4Uke+mTmMXER5qlCElIq7CUAlDJQyVMFTCUAnDL9VVt+k+X06tw4kL/LdAe8jQ5+2sf8Yhgwu4gAscFWgPGfq8nfXPOGRwARd4A0MlDJUwVMJQCUMlDJUw1InyAPUuazDPNW03AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FlangedNozzle" GraphicalStyleName="Flanged Nozzle Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABmSURBVFhH7c7BCoAgFAVR//+nX7bQhUwQJePmBodkjLitqo7CaMJowmjCaMJowmjC+FV/+ovvhvWbedghAzIgA34NuC92GP97sn4zDztkQAZkQAa8cXzACqMJowmjCaMJowmjp9oFyvuNDuh7USAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="FrontFacingNozzle" GraphicalStyleName="Front Facing Nozzle Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC0SURBVFhH7Y5RDoUgDAS9/6VRSJpoGbAopX74knkJI+zullIKBeVKUPY4fvkP0XctoCQsJZY7GpRnHoUOvEEpjBZrLO9RZt6WC3c5LCeVC728WkwuF1q5tYgc4FUuUP71EDnAu1zQPc0PXvwD/gHfHVAOziMo/3qIHlCE04hWbi2iBxQ5eUQvD2Vm1oi7HJTC2xGW9yjP5JDRISNvUBKWUMsdDcoeUkLouxZQrgTlSlCuI207GaBlNp6H988AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="SingleLineNozzle" GraphicalStyleName="Single Line Nozzle Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABRSURBVFhH7Y5BCgAgCAT9/6fNgkBiO7ZdRhhk14MTmfkVWTqRpRNZvqSmVss9OEAAAQQQQOAqMA8u9s/1twcHCCCAAAIIIPBd4ESWTmTpI2MALAuNDilbosAAAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="ReliefValves">
+      <Class name="PilotOperatedReliefValve" GraphicalStyleName="PilotOperatedReliefValve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADpSURBVFhHxY9RDsIwDMV2/0sP8hHpKXKaN3UUJENrbXG47vv+KyhPgpL4fuJrpL43gZJwhh9bIM4UIzeBktDheVZHdweUhA7Pszq6O6AkdHick3Tp9e6AktDhXajzK1ASOrwLdX4FSsIZ/vMFJuo7DigddqIKSoeM7y6B0iHCu/EApUPGd5dA6RDh3XiA0uGNeIBy4q1/H6B06BZ4uhhKhxqKe6J+AqVDhmpUzw4oHWpYfXUrUDrkAjVY7xMoJzKiv9W5oJzQSD3r3QHlihp4GqygXEHBnSVQdkSooz7rgvIkKE+C8hz39QFUbTVmyLMBTQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PressureAndVacuumReliefValve" GraphicalStyleName="Pressure And Vacuum Relief Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVFhHzZABCgMhDAT7/0/bW2gghDEJ2moLgzoxbq6vMcZVUJ4EZZfn9yxc64Kyy18MsDsEyi5X/wH/9TuDoOzih1gFZRcfvjoIyg4KtNDVcIGywgfvhAuUXXbDBcoO3/h6gbLCgq8M4EN/OoAerwI69fIOSWGN2SOZt9rsjoFSxEadycVzdSeCUswa5a3mV9tHZt5AKcrGT2jnXnQelCJrVC0S7xhZTaAU1Chnnlbbe8h5UArfqH18yM7kvYv1CEphD9ED0c3uGLHmQVkRH61CMlBmzMJWh0CZcXWAKmRlCJQzFFAReypQngTlSVCeY7zeTfUldpctL34AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="PressureReliefValve" GraphicalStyleName="Pressure Relief Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADTSURBVFhHzZBRCsMwDMV6/0tn9YchGD17IcHpQHRVWfS6Z4xxFZSdoKx4P++Fn62CsuITA06NQFlx9R+Y3/7EEJQV84hdUFbM8d0hKDMs6NHduIFSMYdPxA2UFafiBsqMk29voFR4+NoA5/MDVgairFAB8058pkBZEQMxGp9noKzwgF0pRk6BskKFnbYBKqQ8gTLDD5+v/t2J9xkoM/zwGLF79SwDpSIeTCFz5BUoFfHglZACJaFiuyNQElcHVJGdESgjFqiIv/kXlJ2g7ARlH+P5Adq7XT4UVOjMAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="RuptureDiscForPressureRelief" GraphicalStyleName="Rupture Disc For Pressure Relief Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVFhHxY5LigQxDMX6/pdOlxcGI178WSQZ0DTID1V+a62nSHkTKcn3Z/9GsLFDSjIJGkceMIqeeED8rejuDClJDHbinY0jJWGw+kB1j0hJVDD7SHYjUpJdcOoVUpIsqG7ZnkhJqiDv1T4iJekE46azd6Qk3aDvuntDSjIKftunDzCePsC2zx7gu+7ekJJ0gnHT2TtSkirIe7WPSEmyoLpleyIl2QWnXiElUcHsI9mNSEkYrD5Q3SNSkhjsxDsbR0riwW64uzOkJBYcRU88gC7jyAOmsLFDyptIeRMp77F+f6FgMWpmaBPtAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="RuptureDiscForVacuumRelief" GraphicalStyleName="Rupture Disc For Vacuum Relief Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVFhHxY5LigQxDMX6/pdOlxcGI178WSQZ0DTID1V+a62nSHkTKcn3Z/9GsLFDSjIJGk8fYNtnD/Bdd29ISTrBuOnsHSlJFeS92kekJFlQ3bI9kZLsglOvkJKoYPaR7EakJAxWH6juESlJDHbinY0jJfFgN9zdGVISC46iJx5Al3HkAaPoiQfE34ruzpCSxGAn3tk4UhIGqw9U94iURAWzj2Q3IiXZBadeISXJguqW7YmUpAryXu0jUpJOMG46e0dK0g36rrs3pCSj4Ld9+gDjyAOmsLFDyptIeRMp77F+f6FgMWovGRUOAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="VacuumReliefValve" GraphicalStyleName="Vacuum Relief Valve Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADMSURBVFhH5ZBBCgIxEAT3/5+OO4eB0FRMeoTMQaGIVlar8RljtILyJihd3td78N0OlC6tAyL+v/9AhuOsjkDp8Es8QHnCHG0ZEGQ4zuoIlA5zvDICpUslnKB0iQHVEShdMl4ZgdKlEk5QKrvAlQGJ3gUrfwJKZQ7Eew3qZweUCgXCpaf7U1Aq3wJx1zYg46v7E1AqGpijerqgVOaIhua7dA4olfhxCqijZ3agPKV1wCrmjkB5QuuAXcQZgXJHBHbod1agvAnKm6C8x3g+KYldPriVL+AAAAAASUVORK5CYII=</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Actuators">
+      <Class name="BackPressureRegulator" GraphicalStyleName="BackPressureRegulator Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAClSURBVFhH5c5RCoAwDANQ73/paT4CpWQuKm5ihScStzZba20pGc4kQzoevIbyvStkSO7wJyVkSJ8ugH89+ewZGZIa5iwZ/Y9kSHnQpcHmWRlSHuIOJee8DCkOcIZlzh0ZUhyA7zt4v0eG5AwA95wiw8gZ/u8CMFrwegE4W1KjAPQW1SkAalmtApAX1isAcWnNAsDFywoAltcuAMsLPCHDmWQ4T9t2EDZLUOdCh/UAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="BackPressureRegulatorWithExternalTap" GraphicalStyleName="BackPressureRegulatorWithExternalTap Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB1SURBVFhH7Y5BDsAgCAT9/6ep3gyL1k0NxnQPcxkBp5jZUUKZCYqqvuJvzkBBHohgbqBQwM0BbbfHv0egWFzsGX048j0oXhY8K/OzGRREwI5ZFLcFMPj9BorBIANzA4UCFKAABShAAb8P2MHxAIZQZhLKPKw8YgxFVmCKq3MAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="CylinderOrPiston" GraphicalStyleName="Cylinder Or Piston Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABrSURBVFhH7c5BCsAgEENR73/pad0On5CCjFBSeF18ULOq6iqMkzCS99s/Sz+rYCTuxRnw7wGuflbBSOhitykYifsYNQUjcR+jpmAk+2JXP6tgdH19jGB0ZUAGZEAGZEAGZEAGnIBxEsY5tR66b28sP4WunAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="Diaphragm" GraphicalStyleName="Diaphragm Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABwSURBVFhH7Y7BDoAwCMX2/z+NejCZpCIYwzy8Jd2hTugws6Wg7ATlE/s5rgv+TRaUd0TLom8RKIns8GoESk95aOE9ypnq8pPsfyhnfhHwFj+LQJkluyQCZRYFKEABClCAAhSgAAUsD/gClJ2g7MPGBhSFjQ61NLLrAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="DifferentialPressureReducingregulator" GraphicalStyleName="DifferentialPressureReducingRegulator Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADaSURBVFhH5Y5LDgMhDMXm/pemzSJShIxJP6KqZuGNeRiuMcZPQXkSlk/dYb73Diyb8W98guU/fCA2yXz2CiwlSo+S68JyEds9sjsnWEKoG+/uEpaLD3SZ7xosIdINd3cJyw8/QMy7BGVAlywUrM7tHsrAYivmbaJnJBO7GOzOE9uhrOjlW3wgWAUsXLEdyplVwMIV26EkKGLhiu1QEhSxcMV2KFfMIQtXbIfSqDELV2yH0qgxC1dsh3JHBi1csR3KHRm0cMV2KDtE9N4fCLofMFCeBOVJUJ5jXA8ZKB1+4uHG7QAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ElectroHydraulic" GraphicalStyleName="Electro-Hydraulic Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACeSURBVFhH7Y5BDsMwCATz/0+74YBE0WBv3da5EGliMrHYvcYYj4LyJChX3I+93sh3VFDOqMJ2S6CsWIXslEBJVMuzr+5VoCRscST7PKugJHx5DPDZveP/FVAStNy/4+mzCkoihsRzNiugJNTFfytgrJZ/Gm6gnGEhOYicCkoFD90NdlCqfBtuoFTpAl2gC3SBLtAFusAvQHkSlOcY1wsVwnMonRyf5gAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="HandWheelWithActuator" GraphicalStyleName="Hand Wheel With Actuator Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACASURBVFhH7c5BCoAwDERR73/paBeChm+cFGlFIzwX0zaZxcymwnAkDCPb134n/k4GhiRaFp3dwdBTh/cUwfAoO7DJvMFw17O8+VaBXn7WFQwVmSURDBVVoAooBaQ7FCpeUUDh33kYKqThvy+gwFBRBapAFagC0ws8BcORMBzHlhVxh3EqaWoavQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="ManualOperator" GraphicalStyleName="Manual Operator Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABNSURBVFhH7c5BCgAgCERR739pq62MoBC6+cFvMYt65u6ryXEyOcbueVer+EaWHKt1PsqSYzUAAAAAAAAAAAAAAAAAWAf8SI6TyXEutwMYGab0TNGoWQAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="PositionerAndSolenoid" GraphicalStyleName="PositionerAndSolenoid Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADNSURBVFhH7Y5RDoQwCES9/6W7kjgGYaBomnY/usnb6mOkc7TWlkLlTKiMOH/yd2PnX6Ay4i8K4FxWQGPnX6AyY9TFgMqMXWBJAbkUF+sTz5rIR3B5LdFYH+UYko3wgnyonQUZndMO3jrgRbKgd0Zkcy+y8DnTwGEekWW8KCwEku3le5nnS2GhpprPMs+X4kJQzWY5L14UqLKsgOzS2LngRRB8C9tDnRMDCzBczgkSskTLGL2sF9cHo7H3ACpHsgssLyDsAhlUzoTKebTjB0t046lwx+kMAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PressureBalancedDiaphragm" GraphicalStyleName="Pressure Balanced Diaphragm Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACCSURBVFhH7c5BDoQwDENR7n/pQHYQ/bQJqtqNR3qzMJXjy8yOwnAnDGeen/99xDdVGGZGx0bfRjAk1fLuCAzJ0QHt0sZ7DCMv7IodGQyjTqFbPsBVSzvHHYaZWXn3uMNwxI9k4tsKDKv+Hn3DsEoDNEADNEADNEADNGAFDHfCcB+7bmD5gRoNTnsGAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PressureReducingRegulator" GraphicalStyleName="PressureReducingRegulator Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC7SURBVFhH3c5bCoRADERR97/pnqmPQBOuVmyHNoxwRMq8jjHGqzDcCUPn++hVknszDJ3KYPmvAzTsTK4NV/8ChpkbpP9U4/oEw1llSMi1lV4MQ2XALNdX+jEMlQHZ3FPpxzBowIq5P77PYOhUBsurB1RqBEOn/QHV5YKhc7XgznLB0Gl7wN3lgqHT8oCV5YKh0+6A1eWCodPqgCfLBUOnzQFPlwuGjhb/Yrlg6LQ4IGerMNwJw50w3GccH6YySVJobGANAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="PressureReducingRegulatorWithExternalTap" GraphicalStyleName="PressureReducingRegulatorWithExternalTap Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB7SURBVFhH7Y5BCoAwDAT7/09HKwgl2cWGSqqwwniYJu00M9sKlJVA6Tm//lvG39sJAsGWMyjgvwF9ccSfz8J2g7hhDzL/BNsJ4pITD8zMjLD5KBIXvzEbxRcCMvh9BpsNApF5iKEABShAAQpQgAK2BzCgrATKSqCsw9oBeIhDWPUA9iUAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="RotaryMotor" GraphicalStyleName="Motor Operated Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACXSURBVFhH7c7RqoUwDERR//+nq30IaNhpplXqSy6sC24OnRyttV9h3Alj5vrr/x78b1QYR6Kx1SMwRrKRlSMwEvXx2SMwEv+wfUddhZFEQ1FXYSQ0ZHy/f2cwEhoyvt+/MxgJPay2EYyR7PHZ8Q7jSB/xQ9RUGBU2ujpsMKrejncYVXVAHVAH1AF1QB1QB3wB404Y92nHCbythRaOu/V3AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="Solenoid" GraphicalStyleName="Single Solenoid Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACISURBVFhH7Y5BCsBACAP7/0/behBEklVKsZcUpmRnWZLLzH4Fyk2gZDyf/47UNx1QMrqC1QGeg+wiT4GS0ZUh1wElIxd4roX1PAFKBirIDt13QMlgBeHZ/QkoGbnAc5Bd5ClQMrqClQEd9U0HlFPeFFagnKIBGqABGqABGqABGvAFUG4C5R523duCeSIF10ePAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="SolenoidManualReset" GraphicalStyleName="Single Solenoid-Manual Reset Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVFhH7Y7RDsQgCAT7/z9tSxOOPbqATYl96cPEdXTFbYzxKlSuhMqVWDhihd7txIIb4If68y4sBMM0o+vEQvCBzHVgwQ2QPTp/3oWFYID66PwpFsgAdOy8AwtuQLXvwsIRK/TuDLMdKoW7AxHsVu9QKVTFCNbL3qJSyEoR2pEVwTPPRShRIQLvz+Sf80KRy3eIuuj17G+PG4SVM/C+ZnRsfzovFHa5Qjt+9Rm5CCUqVEjPd7O3qBSyUgV2q3eoFKpihfRn3qBSePqBWagUvg98H3j9A6ugciVUroTKdYxtBzSFJXaAT5GYAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="SolenoidRemoteReset" GraphicalStyleName="Single Solenoid-Remote Reset Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADiSURBVFhH7Y7RDsQgCAT7/z9tSxOOPbqATYl96cPEdXTFbYzxKlSuhMqVWDhihd7txIIb4If68y4sBMM0o+vEQvCBzHVgwQ2QPTp/3oWFYID66PwpFsgAdOy8AwtuQLXvwsIRK/TuDLMdKoW7AxHsVu9QKVTFCNbL3qJSyEoR2pEVwTPPRShRIQLvz+Sf80KRy3eIuuj17G+PG4SVM/C+ZnRsfzovFHa5Qjt+9Rm5CCUqVEjPd7O3qBSyUgV2q3eoFKpihfRn3qBSePqBWagUvg98H3j9A6ugciVUroTKdYxtBzSFJXaAT5GYAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="TemperatureRegulatorFilledSystemType" GraphicalStyleName="TemperatureRegulatorFilledSystemType Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACdSURBVFhH7Y5BCsAgDAT7/09bcwiFMLpRil5SGApjstmntXYVlCdBuUL/+u/7r4JyhB1ZJWZEUBKjMPfqfQRKQgWNqAK/FLAQJ74p1A5Kh46Sm6FmURpyMVlE5qBMBBuZOTXDMlnAkAd2C2SJuxE1g5LIHCOuFrAdJ745KIlZyAy1h5LYKWA7VwsYVaAKVIEqUAUUKE+C8iQoz9GeF4zHRVbE8XxPAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="NonEngineeringItems">
+      <Class name="Annotation" GraphicalStyleName="Annotation Style" />
+      <Class name="ClosedDrainNoPID" GraphicalStyleName="Closed Drain No PID Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACpSURBVFhH7Y5RDoQgDAW9/6WRmqCEDNKWWPxgk4nsrMu8I6W0FJSRoIwEZSQoNeRPfjxPLyhHtNGZESjf6MW8I1D2GEU8I1AS2sutI1C2mC81vI+yxhovaP+Hsmb5AME6wvI+SkJ7qSUuoOwxutwaF1C+0Yt44gLKEW3MGxdQaijRmbjwHPIxitK8uveh+eEr9oA9YA/494AoSvPq1l9WgDISlJGgjCMdJ0TBMWqpwx65AAAAAElFTkSuQmCC</ImageData>
+      </Class>
+      <Class name="FlowArrow" GraphicalStyleName="Flow Arrow Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACfSURBVFhHxc5BCsMwEEPR3P/SbgkoKkJgjJ3fxQMhPDO+xhh/VUtSLUm1JNWSVEtSLUm1JNWS5PCNv9S/zSE+kPTuNIc4OKO5XQ5xYJX2rHKIhbu0d8YhFpymO8khBt6km/fdJ8Sj03QnOcTALu2dcYgFq7RnlUMsnNHcLoc4kPTuNAfoYKolqZakWpJqSaolqZakWpJqSaolqZaccX0AoptwHYnZRckAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="Gap" GraphicalStyleName="Gap Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB6SURBVFhH7Y5BCgAgCAT7/6ct7wMpinsxmIjpsHPMTArKSVBOgvLHO369J/9nQBmlIwJlhmoEygzyAKcSgTLLBmyANKAy7qDMIA2ojjsoo0gDOsYdlBGkAV3jDsofG7AB8gCnKwJllI4IlBmqESizVCJQToJyEpRz2Lno077cgDTllAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="OpenDrainNoPID" GraphicalStyleName="Open Drain No PID Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACSSURBVFhH7c5bDoQgFARR9r9p5JKghBRPY+MHk5yMUzo2znu/FUYljEoYlTAqYVTCqIQxFz7hi++1jP4PY2n2EDPPYySjL50ZNxhrei+fHTcYW2ojK+MGY085tjpuMI5Io2/GzXMRLlXSZty9L4obXzkHOAc4B/j3AVTSZtzNf+yAUQmjEkYljEoYlTAqYdTx7gKtuk1OlL3QJAAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="TieInSymbol" GraphicalStyleName="Tie In Symbol Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC+SURBVFhHxY4BDsMgDMT6/0+zHVIqCl6bshAmeSomOe4opWwFZSYoM0GZCcqW709/U/RZBMoWb1BPSIHZxw3PPkrjLkB3Rn9n3N0ZKIVrOWAGpYgIF08zLB3BImJuFM5QETE7ihehb3AVWPW4QfnXw84Cqx83+nfOj3pYXILyr4fdBapYVOJX7ih2F6gyuMRdHkoRVeIpB6XYXkD8W8Kzj9LYXkDMlvDuoWxR0Cx9FoEyE5SZoMwEZSYo8yjHB78HV0ShMJGaAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Connectors">
+      <Class name="ClosedDrain" GraphicalStyleName="Closed Drain Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACcSURBVFhH7c5BCgMxDEPRuf+l0/HCFMSP44mLC0MCj4AWsq4xxl9h2AnDThhm3O/+vv8uDFf0aGUEhpHZsd0RGM6sjuyMwJBky5+OwHBmVf70uMEwMjuyc9xguKLHdo8bDDP8aOW4wdBZeZV2KgxdpiByBpwBPxlQpZ0KQ5cpiJwB7xhQpZ0KQ5cpiJwB7xhQpZ0Kw04YdsKwz7g+s1gVhhOcktUAAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="LinesAndInstrumentSignalConnector" GraphicalStyleName="Lines And Instrument Signal Connector Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB9SURBVFhHxc47DsAgDMBQ7n/plA6I0BrEghmeRFw+LRFxFUYTRhNGE0YTRhNGE0YTRhNGE0YTRhNG0zjU8aT8VtMXkw3Zzp4VOt8Xwg+8vndMP5CdPSt0fhzqeFJ+q/kFG0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNGE0ZPlAfXcYMYnjs4XwAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="OffPageConnector" GraphicalStyleName="Off Page Connector Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACBSURBVFhHxc5BDoAgDABB/v/pKokEqtuEC+thEti0YouIX2E0YTRhNGE0YTRhNGE0YTRhNGE0YTRhNOXLfT1pfWuYh2JgtTNT6bu0Pw/SD7y/kQbGubIzU+m7tJ8vz9Ap61vDJ9gwmjCaMJowmjCaMJowmjCaMJowmjCaMJoweqJd3Np7IN1b308AAAAASUVORK5CYII=</ImageData>
+      </Class>
+      <Class name="OpenDrain" GraphicalStyleName="Open Drain Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACGSURBVFhH7c7RCoAgDIXh3v+lTS8GMX6nrbEQFnwEp/Scq7X2KwwzYZgJQ9Kf/uJvT7v/CQxnVpe/LR8wtMxKPOUDhiu6zFs+YLhDSr+UDxz2OJruEBwaBzxqQA04c0A03SE4NA541IAa4BoQTXcIDo0DHjWgBpw5IJruEBhmwjAThnnadQPS1/WX1/OJfgAAAABJRU5ErkJggg==</ImageData>
+      </Class>
+      <Class name="UtilityConnector" GraphicalStyleName="Utility Connector Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABtSURBVFhH7c6xCsAgDABR//+n0xKILXK4eS4ZHsRzSEZEXIXRhNGE0YTRhNGE0YTRhNH0De9oqZ25dw7Lxyl9QB+wPcBSO3PvHJaPU/qAPmB7gKV25t7/4waMJowmjCaMJowmjCaMJowmjJ4YD9hqK3A1Kc+fAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="LineBreakers">
+      <Class name="SegmentBreaker" GraphicalStyleName="Segment Breaker Style">
+         <ImageData>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB2SURBVFhH7c5RCoAwDATR3v/SsQqChgmkoOuHKzykIzYZEfEpjEoYlTAqYeyaz3zxty6MXf9ZYB9Ew6pGvYIxOy9dke+o3A/pkjdc5x0zcyDlz0WjXsHYtTKogrHLC3gBL+AFvIAX8AJPwKiEUQmjEkYljDoxNnmncSoixutVAAAAAElFTkSuQmCC</ImageData>
+      </Class>
+   </BaseClass>
+   <BaseClass name="Pins" />
+</ProcessPower>
